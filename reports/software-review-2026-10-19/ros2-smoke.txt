@@ -1,0 +1,35 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-19-16-07-23-505295-ae1e95fdad15-22
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [synthetic_source-1]: process started with pid [23]
+[INFO] [telemetry_adapter-2]: process started with pid [25]
+[INFO] [diagnostic_stub-3]: process started with pid [27]
+[INFO] [report_recorder-4]: process started with pid [29]
+[report_recorder-4] [INFO] [1792426043.955019586] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=0 status=stub
+[report_recorder-4] [INFO] [1792426044.138073003] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=1 status=stub
+[report_recorder-4] [INFO] [1792426044.337076670] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=2 status=stub
+[report_recorder-4] [INFO] [1792426044.540053836] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=3 status=stub
+[report_recorder-4] [INFO] [1792426044.737240753] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=4 status=stub
+[report_recorder-4] [INFO] [1792426044.940617336] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=5 status=stub
+[report_recorder-4] [INFO] [1792426045.137674628] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=6 status=stub
+[report_recorder-4] [INFO] [1792426045.341557837] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=7 status=stub
+[report_recorder-4] [INFO] [1792426045.540374295] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=8 status=stub
+[report_recorder-4] [INFO] [1792426045.742359129] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=9 status=stub
+[report_recorder-4] [INFO] [1792426045.937244337] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=10 status=stub
+[report_recorder-4] [INFO] [1792426046.137728087] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=11 status=stub
+[report_recorder-4] [INFO] [1792426046.336445962] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=12 status=stub
+[report_recorder-4] [INFO] [1792426046.535255212] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=13 status=stub
+[report_recorder-4] [INFO] [1792426046.737565546] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=14 status=stub
+[report_recorder-4] [INFO] [1792426046.937871921] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=15 status=stub
+[report_recorder-4] [INFO] [1792426047.140967296] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=16 status=stub
+[report_recorder-4] [INFO] [1792426047.339030754] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=17 status=stub
+[report_recorder-4] [INFO] [1792426047.540111879] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=18 status=stub
+[report_recorder-4] [INFO] [1792426047.738327796] [report_recorder]: REPORT run_id=ros2-814710d36bf4 sequence=19 status=stub
+[report_recorder-4] [INFO] [1792426047.739380629] [report_recorder]: DEMO_COMPLETE
+[INFO] [report_recorder-4]: process has finished cleanly [pid 29]
+[INFO] [diagnostic_stub-3]: sending signal 'SIGINT' to process[diagnostic_stub-3]
+[INFO] [telemetry_adapter-2]: sending signal 'SIGINT' to process[telemetry_adapter-2]
+[INFO] [synthetic_source-1]: sending signal 'SIGINT' to process[synthetic_source-1]
+[INFO] [synthetic_source-1]: process has finished cleanly [pid 23]
+[INFO] [telemetry_adapter-2]: process has finished cleanly [pid 25]
+[INFO] [diagnostic_stub-3]: process has finished cleanly [pid 27]
+ROS2_SMOKE_PASS /artifacts/ros2-814710d36bf4

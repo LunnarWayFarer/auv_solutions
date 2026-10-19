@@ -1,0 +1,13 @@
+test_conversion_and_identity (test_core.DataFormatTests.test_conversion_and_identity) ... ok
+test_count_limits (test_core.DataFormatTests.test_count_limits) ... ok
+test_invalid_inputs (test_core.DataFormatTests.test_invalid_inputs) ... ok
+test_local_pipeline_persists_every_message (test_core.DataFormatTests.test_local_pipeline_persists_every_message) ... ok
+test_malformed_json_and_duplicate_keys (test_core.DataFormatTests.test_malformed_json_and_duplicate_keys) ... ok
+test_missing_and_ground_truth_fields_rejected (test_core.DataFormatTests.test_missing_and_ground_truth_fields_rejected) ... ok
+test_normalized_format_rejects_wrong_source_and_values (test_core.DataFormatTests.test_normalized_format_rejects_wrong_source_and_values) ... ok
+test_stub_cannot_claim_real_diagnosis_or_sources (test_core.DataFormatTests.test_stub_cannot_claim_real_diagnosis_or_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK

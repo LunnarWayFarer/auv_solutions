@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- Transport smoke test only: a fixed submerged sensor fixture, not an AUV model. -->
+<scenario>
+  <environment>
+    <ned latitude="59.0" longitude="30.0"/>
+    <ocean>
+      <water density="1031.0" jerlov="0.2"/>
+      <waves height="0.0"/>
+    </ocean>
+  </environment>
+  <materials>
+    <material name="probe_material" density="1031.0" restitution="0.1"/>
+    <friction_table>
+      <friction material1="probe_material" material2="probe_material" static="0.5" dynamic="0.3"/>
+    </friction_table>
+  </materials>
+  <looks>
+    <look name="probe_look" gray="0.5" roughness="0.5"/>
+  </looks>
+  <robot name="probe" fixed="true" self_collisions="false">
+    <base_link name="body" type="sphere" physics="submerged">
+      <dimensions radius="0.15"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="probe_material"/>
+      <look name="probe_look"/>
+    </base_link>
+    <sensor name="pressure" type="pressure" rate="10.0">
+      <range pressure="1000000.0"/>
+      <history samples="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <link name="body"/>
+      <ros_publisher topic="/probe/pressure"/>
+    </sensor>
+    <world_transform xyz="0 0 5" rpy="0 0 0"/>
+  </robot>
+</scenario>

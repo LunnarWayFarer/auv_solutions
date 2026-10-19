@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-19",
+  "scope": "telemetry processing and ROS2 transport, separate Stonefish pressure test",
+  "local_python": "3.14.7",
+  "container_python": "3.10.12",
+  "local_unit_tests": 8,
+  "container_unit_tests": 8,
+  "ruff": "passed",
+  "ros2_reports": 20,
+  "ros2_run_id": "ros2-814710d36bf4",
+  "stonefish_messages": 10,
+  "stonefish_run_id": "stonefish-dc8886859c3a",
+  "stonefish_pressure_min_pa": 50570.55,
+  "stonefish_pressure_max_pa": 50570.55,
+  "stonefish_image_rebuilt": false,
+  "diagnostic_accuracy": null,
+  "llm_connected": false,
+  "rag_connected": false,
+  "github_actions_run_verified": false
+}

@@ -1,0 +1,55 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 580B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ros:humble-ros-base-jammy@sha256:1813d3c85d7f96ff7d3012d865204583255740182db5d0065f8f8cd029a83138
+#2 DONE 1.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 149B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 25.85kB done
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/library/ros:humble-ros-base-jammy@sha256:1813d3c85d7f96ff7d3012d865204583255740182db5d0065f8f8cd029a83138
+#5 resolve docker.io/library/ros:humble-ros-base-jammy@sha256:1813d3c85d7f96ff7d3012d865204583255740182db5d0065f8f8cd029a83138 0.0s done
+#5 DONE 0.0s
+
+#6 [2/7] RUN python3 -c 'import pytest' && command -v colcon
+#6 CACHED
+
+#7 [3/7] WORKDIR /workspace
+#7 CACHED
+
+#8 [4/7] COPY ros2_ws/src /workspace/ros2_ws/src
+#8 DONE 0.0s
+
+#9 [5/7] COPY scripts /workspace/scripts
+#9 DONE 0.0s
+
+#10 [6/7] RUN source /opt/ros/humble/setup.bash && cd ros2_ws && colcon build
+#10 0.580 Starting >>> auv_diagnostics
+#10 0.884 Finished <<< auv_diagnostics [0.30s]
+#10 0.897 
+#10 0.897 Summary: 1 package finished [0.43s]
+#10 DONE 0.9s
+
+#11 [7/7] COPY docker/entrypoint.sh /project-entrypoint.sh
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:bb71b296ce2057c42afa031e723c9ef1668fdf15327f050c5ac5196451b96adf done
+#12 exporting config sha256:b0d70283e993ff4ef0b85aef3b59588bbab7de59529a7702d30d61511d264c76 done
+#12 exporting attestation manifest sha256:3341be43b5639b7745ebb17efd9789f4388a507c5097bfa4d4c4056d8f34dced done
+#12 exporting manifest list sha256:61be80176e55971fb7aea995b8f241109e83477470ee942c9f890caecd30f9ee
+#12 exporting manifest list sha256:61be80176e55971fb7aea995b8f241109e83477470ee942c9f890caecd30f9ee done
+#12 naming to docker.io/library/auv-week1:latest done
+#12 unpacking to docker.io/library/auv-week1:latest 0.0s done
+#12 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/j2jjbyf9ygfrdzuivah0q41mw

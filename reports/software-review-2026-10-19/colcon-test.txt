@@ -1,0 +1,8 @@
+Python 3.10.12
+Starting >>> auv_diagnostics
+Finished <<< auv_diagnostics [0.24s]
+
+Summary: 1 package finished [0.36s]
+build/auv_diagnostics/pytest.xml: 8 tests, 0 errors, 0 failures, 0 skipped
+
+Summary: 8 tests, 0 errors, 0 failures, 0 skipped

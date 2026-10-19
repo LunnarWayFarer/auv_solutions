@@ -1,0 +1,32 @@
+FROM auv-week1
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ARG STONEFISH_REV=b21eb8e194c570ff2f61e91aeffb38d73dc25f42
+ARG STONEFISH_ROS2_REV=6646e7ac25eed982f37f807abc7b545dbd2d6648
+ARG ROS_APT_URL=https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu
+RUN sed -i 's|http://|https://|g' /etc/apt/sources.list \
+    && sed -i "s|http://packages.ros.org/ros2/ubuntu|${ROS_APT_URL}|g" /etc/apt/sources.list.d/ros2.sources \
+    && sed -i 's/Types: deb deb-src/Types: deb/' /etc/apt/sources.list.d/ros2.sources \
+    && apt-get update -o APT::Update::Error-Mode=any \
+    && apt-get install -y --no-install-recommends \
+       libglm-dev libsdl2-dev libfreetype6-dev libgl1-mesa-dev \
+       ros-humble-pcl-conversions ros-humble-image-transport \
+    && rm -rf /var/lib/apt/lists/*
+RUN git init /opt/stonefish \
+    && cd /opt/stonefish \
+    && git remote add origin https://github.com/patrykcieslak/stonefish.git \
+    && git fetch --depth 1 origin "${STONEFISH_REV}" \
+    && git checkout --detach FETCH_HEAD \
+    && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build build --parallel 2 \
+    && cmake --install build && ldconfig
+COPY docker/patch_stonefish_humble.py /opt/patch_stonefish_humble.py
+RUN git init /workspace/ros2_ws/src/stonefish_ros2 \
+    && cd /workspace/ros2_ws/src/stonefish_ros2 \
+    && git remote add origin https://github.com/patrykcieslak/stonefish_ros2.git \
+    && git fetch --depth 1 origin "${STONEFISH_ROS2_REV}" \
+    && git checkout --detach FETCH_HEAD \
+    && python3 /opt/patch_stonefish_humble.py /workspace/ros2_ws/src/stonefish_ros2 \
+    && source /opt/ros/humble/setup.bash \
+    && cd /workspace/ros2_ws \
+    && CMAKE_BUILD_PARALLEL_LEVEL=2 colcon build --packages-select stonefish_ros2 \
+       --cmake-args -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release

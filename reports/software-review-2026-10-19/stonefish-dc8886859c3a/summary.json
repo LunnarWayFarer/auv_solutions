@@ -1,0 +1,8 @@
+{
+  "run_id": "stonefish-dc8886859c3a",
+  "sensor_messages": 10,
+  "source": "stonefish",
+  "topic": "/probe/pressure",
+  "fixture": "fixed sphere at 5 m",
+  "diagnostic_agent_connected": false
+}

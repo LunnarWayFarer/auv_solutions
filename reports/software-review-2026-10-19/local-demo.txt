@@ -1,0 +1,1 @@
+{"agent": "fixed-stub/0.1", "diagnostic_accuracy": null, "output": "/Users/mihailmedvedev/Desktop/LLM_project/reports/software-review-2026-10-19/local-run", "reports": 20, "run_id": "software-review-2026-10-19", "transport": "in_process", "vehicle_id": "auv-01"}

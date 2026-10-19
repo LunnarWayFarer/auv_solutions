@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-19T19:06:33.870502+03:00",
+  "checks": [
+    {
+      "check": "python-version",
+      "returncode": 0,
+      "log": "python-version.txt"
+    },
+    {
+      "check": "unittest",
+      "returncode": 0,
+      "log": "unittest.txt"
+    },
+    {
+      "check": "ruff",
+      "returncode": 0,
+      "log": "ruff.txt"
+    },
+    {
+      "check": "local-demo",
+      "returncode": 0,
+      "log": "local-demo.txt"
+    }
+  ]
+}
