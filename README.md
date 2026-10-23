@@ -87,5 +87,3 @@ docker run --rm auv-week1 bash -c 'cd /workspace/ros2_ws && colcon test --return
 - `reports/software-review-2026-10-19/`: сохранённые результаты повторной проверки.
 
 GitHub Actions настроен на Ruff, unittest, сборку контейнера, colcon test и передачу сообщений через ROS2. Результат конкретного запуска проверяется на вкладке Actions.
-
-В метаданных ROS2-пакета пока указаны технический контакт `maintainers@example.invalid` и лицензия `Proprietary`. Адрес сопровождающего и лицензию для публичного репозитория команда ещё не выбрала.
