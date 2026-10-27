@@ -1,0 +1,4925 @@
+{
+  "schema_version": "1.0",
+  "run_id": "integration-84b3608ccb0a",
+  "vehicle_id": "auv_01",
+  "window_id": "w0001",
+  "frame_id": "map_enu",
+  "body_frame_id": "body_frd",
+  "window": {
+    "start_s": 5.0,
+    "end_s": 10.0,
+    "clock_domain": "ros_wall"
+  },
+  "clock_origin_ros_s": 1792956641.8702419,
+  "complete": true,
+  "acceleration_includes_gravity": true,
+  "source_rates_hz": {
+    "pressure": 10,
+    "imu": 50,
+    "dvl": 10,
+    "navigation": 10,
+    "thruster_state": 100
+  },
+  "samples": [
+    {
+      "stamp_s": 5.006406545639038,
+      "stamp_ros_s": 1792956646.8766484,
+      "sequence": 50,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956646.8656824,
+        "imu": 1792956646.8522642,
+        "pressure": 1792956646.8651943,
+        "dvl": 1792956646.8653867,
+        "navigation": 1792956646.8654294
+      },
+      "sources_age_s": {
+        "thruster_state": 0.010966062545776367,
+        "imu": 0.024384260177612305,
+        "pressure": 0.011454105377197266,
+        "dvl": 0.011261701583862305,
+        "navigation": 0.011219024658203125
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067807875471,
+        0.7071067815855481,
+        6.447339879982028e-11,
+        -6.447339981268425e-11
+      ],
+      "angular_velocity_rad_s": [
+        -4.5077078383811686e-18,
+        2.9502560733277995e-10,
+        -2.1693845531795247e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04778693913122182,
+        -1.68079697340123e-11,
+        -9.810000000002503
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1261482097506117,
+        1.3364818897136467e-10,
+        1.6662283899620906e-11
+      ],
+      "dvl_altitude_m": 14.99999999886208,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0035495451765789107,
+        0.16244528235003772,
+        -5.012896487132706
+      ],
+      "velocity_estimate_body_m_s": [
+        0.13136174771362508,
+        0.001432464149769998,
+        -0.0024267426278205464
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1524.2509167988146,
+          "thrust_n": 10.191313400467106,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1524.2509167988146,
+          "thrust_n": 10.191313400467106,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.10195779800415,
+      "stamp_ros_s": 1792956646.9721997,
+      "sequence": 51,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956646.963231,
+        "imu": 1792956646.9516747,
+        "pressure": 1792956646.9630241,
+        "dvl": 1792956646.9631715,
+        "navigation": 1792956646.9631946
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008968591690063477,
+        "imu": 0.020524978637695312,
+        "pressure": 0.009175539016723633,
+        "dvl": 0.009028196334838867,
+        "navigation": 0.009005069732666016
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067807192709,
+        0.7071067816538242,
+        8.006395752693336e-11,
+        -8.006395791902236e-11
+      ],
+      "angular_velocity_rad_s": [
+        -9.288087604503356e-18,
+        4.5200431780914763e-10,
+        -1.9557302510619844e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04716030850133295,
+        -2.0632991692054164e-11,
+        -9.81000000000318
+      ],
+      "dvl_velocity_body_m_s": [
+        0.13088278978044546,
+        1.56231823672454e-10,
+        2.211147703904479e-11
+      ],
+      "dvl_altitude_m": 14.999999998588336,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0023506547895358254,
+        0.18319882732195536,
+        -5.000384270349149
+      ],
+      "velocity_estimate_body_m_s": [
+        0.12416002972445826,
+        0.0033448173019975757,
+        0.006799078191209579
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1524.91613828354,
+          "thrust_n": 10.200210833199293,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1524.91613828354,
+          "thrust_n": 10.200210833199293,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.202528953552246,
+      "stamp_ros_s": 1792956647.0727708,
+      "sequence": 52,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.0617056,
+        "imu": 1792956647.0480995,
+        "pressure": 1792956647.0614598,
+        "dvl": 1792956647.0616255,
+        "navigation": 1792956647.0616584
+      },
+      "sources_age_s": {
+        "thruster_state": 0.011065244674682617,
+        "imu": 0.024671316146850586,
+        "pressure": 0.011311054229736328,
+        "dvl": 0.011145353317260742,
+        "navigation": 0.011112451553344727
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067806588378,
+        0.7071067817142572,
+        9.583580398759691e-11,
+        -9.583580387164659e-11
+      ],
+      "angular_velocity_rad_s": [
+        -7.555617274783259e-18,
+        4.157178278093283e-10,
+        -1.5298116723559005e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.046530780061122684,
+        -2.4489605352588792e-11,
+        -9.810000000004068
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1355545321761472,
+        1.761530404408364e-10,
+        2.7600780673587162e-11
+      ],
+      "dvl_altitude_m": 14.999999998320146,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.001207963151969417,
+        0.1853851398835162,
+        -5.013321777073379
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1386778022872431,
+        -0.01018419545874,
+        -0.006714060696428472
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1525.4596726692666,
+          "thrust_n": 10.207483565462026,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1525.4596726692666,
+          "thrust_n": 10.207483565462026,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.30585241317749,
+      "stamp_ros_s": 1792956647.1760943,
+      "sequence": 53,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.1672509,
+        "imu": 1792956647.153872,
+        "pressure": 1792956647.1670222,
+        "dvl": 1792956647.1671662,
+        "navigation": 1792956647.167215
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008843421936035156,
+        "imu": 0.022222280502319336,
+        "pressure": 0.009072065353393555,
+        "dvl": 0.008928060531616211,
+        "navigation": 0.00887918472290039
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067806110114,
+        0.7071067817620836,
+        1.1127925212252275e-10,
+        -1.1127925105928793e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.5578510262530042e-17,
+        5.003087162084402e-10,
+        -1.0784457106297147e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04590028859473985,
+        -2.7705469934419524e-11,
+        -9.81000000000493
+      ],
+      "dvl_velocity_body_m_s": [
+        0.14016328198278202,
+        1.9074745892323635e-10,
+        3.3280375645016194e-11
+      ],
+      "dvl_altitude_m": 14.999999998047928,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.010366572804335707,
+        0.19839296734817144,
+        -4.998576241446036
+      ],
+      "velocity_estimate_body_m_s": [
+        0.13898987360497858,
+        0.0014039927009907559,
+        -0.004648921403625501
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1525.903779835452,
+          "thrust_n": 10.21342784122255,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1525.903779835452,
+          "thrust_n": 10.21342784122255,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.404353618621826,
+      "stamp_ros_s": 1792956647.2745955,
+      "sequence": 54,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.2654305,
+        "imu": 1792956647.2523582,
+        "pressure": 1792956647.2653003,
+        "dvl": 1792956647.265393,
+        "navigation": 1792956647.2654083
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009165048599243164,
+        "imu": 0.022237300872802734,
+        "pressure": 0.009295225143432617,
+        "dvl": 0.00920248031616211,
+        "navigation": 0.00918722152709961
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067806092725,
+        0.7071067817638227,
+        1.284420351055049e-10,
+        -1.284420329464153e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.5830882916489507e-17,
+        4.5966751222219636e-10,
+        3.082643049549291e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.045270334819751075,
+        -2.984631064604228e-11,
+        -9.810000000006012
+      ],
+      "dvl_velocity_body_m_s": [
+        0.14470905320309813,
+        1.8719071498776474e-10,
+        3.956764902588274e-11
+      ],
+      "dvl_altitude_m": 14.999999997754234,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.008980697136323233,
+        0.22612017907137108,
+        -5.007913833034375
+      ],
+      "velocity_estimate_body_m_s": [
+        0.13997781853886934,
+        0.007079066715256252,
+        0.00061861761055572
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.2666477242865,
+          "thrust_n": 10.218286031778772,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.2666477242865,
+          "thrust_n": 10.218286031778772,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.5006186962127686,
+      "stamp_ros_s": 1792956647.3708606,
+      "sequence": 55,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.3593445,
+        "imu": 1792956647.370035,
+        "pressure": 1792956647.3592393,
+        "dvl": 1792956647.3592966,
+        "navigation": 1792956647.3593154
+      },
+      "sources_age_s": {
+        "thruster_state": 0.011516094207763672,
+        "imu": 0.0008256435394287109,
+        "pressure": 0.011621236801147461,
+        "dvl": 0.011564016342163086,
+        "navigation": 0.011545181274414062
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067806034115,
+        0.7071067817696837,
+        1.538638055009358e-10,
+        -1.5386380207449323e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.3482240614062746e-17,
+        6.923801051077132e-10,
+        -1.1903019147421166e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04451724192271035,
+        -2.8525433083379703e-11,
+        -9.810000000007333
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1491919975579663,
+        1.8557080940671153e-10,
+        4.776915297644673e-11
+      ],
+      "dvl_altitude_m": 14.99999999738592,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.004333765251716031,
+        0.22708329404750838,
+        -5.0061608748736575
+      ],
+      "velocity_estimate_body_m_s": [
+        0.143560290305129,
+        -0.004688651362811603,
+        0.003317727270844965
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.5631372087457,
+          "thrust_n": 10.222256384699115,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.5631372087457,
+          "thrust_n": 10.222256384699115,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.605640411376953,
+      "stamp_ros_s": 1792956647.4758823,
+      "sequence": 56,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.466637,
+        "imu": 1792956647.4527013,
+        "pressure": 1792956647.4663377,
+        "dvl": 1792956647.4665084,
+        "navigation": 1792956647.4665527
+      },
+      "sources_age_s": {
+        "thruster_state": 0.00924539566040039,
+        "imu": 0.02318096160888672,
+        "pressure": 0.009544610977172852,
+        "dvl": 0.009373903274536133,
+        "navigation": 0.009329557418823242
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067805589027,
+        0.7071067818141925,
+        1.7195664764627735e-10,
+        -1.7195664356662025e-10
+      ],
+      "angular_velocity_rad_s": [
+        -9.75363908236163e-18,
+        5.849545841807175e-10,
+        -1.581061014406063e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04401767785122167,
+        -3.080977333288893e-11,
+        -9.810000000008571
+      ],
+      "dvl_velocity_body_m_s": [
+        0.15361238533490645,
+        2.0565716553620417e-10,
+        5.6617487488726247e-11
+      ],
+      "dvl_altitude_m": 14.999999996996197,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0038701090872462034,
+        0.24154678467242854,
+        -5.017481614493206
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1611101424025776,
+        -0.005491594304676998,
+        -0.001351307933834345
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.805390704025,
+          "thrust_n": 10.225501024595387,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1526.805390704025,
+          "thrust_n": 10.225501024595387,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.703141689300537,
+      "stamp_ros_s": 1792956647.5733836,
+      "sequence": 57,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.559379,
+        "imu": 1792956647.5723429,
+        "pressure": 1792956647.5591822,
+        "dvl": 1792956647.5592828,
+        "navigation": 1792956647.5593233
+      },
+      "sources_age_s": {
+        "thruster_state": 0.01400446891784668,
+        "imu": 0.0010406970977783203,
+        "pressure": 0.01420140266418457,
+        "dvl": 0.014100790023803711,
+        "navigation": 0.014060258865356445
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067804995095,
+        0.7071067818735857,
+        1.970067419218463e-10,
+        -1.9700673702459053e-10
+      ],
+      "angular_velocity_rad_s": [
+        -9.064897612263782e-18,
+        5.452860825360049e-10,
+        -1.164551096216364e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.04327296912767643,
+        -3.518888670762856e-11,
+        -9.810000000010334
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1579705778598832,
+        2.2437615590352844e-10,
+        6.494314266732783e-11
+      ],
+      "dvl_altitude_m": 14.99999999663331,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0038277421477085453,
+        0.28004920578147213,
+        -4.995702247550729
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1621581568954688,
+        -0.0035338973963722413,
+        -0.010704496825396728
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.0033294473915,
+          "thrust_n": 10.228152513822543,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.0033294473915,
+          "thrust_n": 10.228152513822543,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.800666332244873,
+      "stamp_ros_s": 1792956647.6709082,
+      "sequence": 58,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.6568155,
+        "imu": 1792956647.6567113,
+        "pressure": 1792956647.6698167,
+        "dvl": 1792956647.5592828,
+        "navigation": 1792956647.5593233
+      },
+      "sources_age_s": {
+        "thruster_state": 0.014092683792114258,
+        "imu": 0.01419687271118164,
+        "pressure": 0.0010914802551269531,
+        "dvl": 0.11162543296813965,
+        "navigation": 0.11158490180969238
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067804645477,
+        0.7071067819085475,
+        2.1096879488016537e-10,
+        -2.1096878945079952e-10
+      ],
+      "angular_velocity_rad_s": [
+        -9.913436207814153e-18,
+        4.786060693256095e-10,
+        -1.2149046571574028e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.042780090675690385,
+        -3.772170173731293e-11,
+        -9.810000000011467
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1579705778598832,
+        2.2437615590352844e-10,
+        6.494314266732783e-11
+      ],
+      "dvl_altitude_m": 14.99999999663331,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0038277421477085453,
+        0.28004920578147213,
+        -4.995702247550729
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1621581568954688,
+        -0.0035338973963722413,
+        -0.010704496825396728
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.1503170799817,
+          "thrust_n": 10.23012170963654,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.1503170799817,
+          "thrust_n": 10.23012170963654,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 5.900346755981445,
+      "stamp_ros_s": 1792956647.7705886,
+      "sequence": 59,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.7555258,
+        "imu": 1792956647.7555096,
+        "pressure": 1792956647.7696245,
+        "dvl": 1792956647.6699636,
+        "navigation": 1792956647.6699946
+      },
+      "sources_age_s": {
+        "thruster_state": 0.015062808990478516,
+        "imu": 0.015079021453857422,
+        "pressure": 0.0009641647338867188,
+        "dvl": 0.10062503814697266,
+        "navigation": 0.10059404373168945
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067804360326,
+        0.7071067819370626,
+        2.2606163515899715e-10,
+        -2.260616289778191e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.2619287837703794e-17,
+        3.579281397167705e-10,
+        -6.838070722098543e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.042168791157374486,
+        -4.04352084095949e-11,
+        -9.810000000012733
+      ],
+      "dvl_velocity_body_m_s": [
+        0.16226699377733972,
+        2.401812705009709e-10,
+        7.179091772605481e-11
+      ],
+      "dvl_altitude_m": 14.99999999633151,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.024618919832394354,
+        0.26407885592214664,
+        -5.014372935861352
+      ],
+      "velocity_estimate_body_m_s": [
+        0.16229779681506115,
+        0.002220571998099837,
+        -0.000746913014862649
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.285159409564,
+          "thrust_n": 10.23192836131765,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.285159409564,
+          "thrust_n": 10.23192836131765,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.0021092891693115,
+      "stamp_ros_s": 1792956647.8723512,
+      "sequence": 60,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.8631108,
+        "imu": 1792956647.8523412,
+        "pressure": 1792956647.862945,
+        "dvl": 1792956647.8630378,
+        "navigation": 1792956647.863067
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009240388870239258,
+        "imu": 0.020009994506835938,
+        "pressure": 0.009406089782714844,
+        "dvl": 0.009313344955444336,
+        "navigation": 0.009284257888793945
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067804009555,
+        0.7071067819721396,
+        2.3822315549672974e-10,
+        -2.3822314839152853e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.4596020511117788e-17,
+        4.1809324948370643e-10,
+        -1.2293133063445427e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.041562948329619084,
+        -4.235090319863703e-11,
+        -9.810000000013623
+      ],
+      "dvl_velocity_body_m_s": [
+        0.17067652416411688,
+        2.6241038668273573e-10,
+        8.191627082671419e-11
+      ],
+      "dvl_altitude_m": 14.9999999958693,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.001146152535709839,
+        0.297542040386527,
+        -5.004120383049889
+      ],
+      "velocity_estimate_body_m_s": [
+        0.16411212811258621,
+        0.0012574563781799454,
+        0.0008829388308696035
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.4051777757209,
+          "thrust_n": 10.233536531956386,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.4051777757209,
+          "thrust_n": 10.233536531956386,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.103839635848999,
+      "stamp_ros_s": 1792956647.9740815,
+      "sequence": 61,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956647.9650776,
+        "imu": 1792956647.9539714,
+        "pressure": 1792956647.9649148,
+        "dvl": 1792956647.9650068,
+        "navigation": 1792956647.9650328
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009003877639770508,
+        "imu": 0.020110130310058594,
+        "pressure": 0.009166717529296875,
+        "dvl": 0.009074687957763672,
+        "navigation": 0.009048700332641602
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067803548235,
+        0.7071067820182717,
+        2.497635655310626e-10,
+        -2.4976355757714235e-10
+      ],
+      "angular_velocity_rad_s": [
+        -5.317159426058906e-18,
+        4.7006202686330785e-11,
+        -9.856556826143642e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.04096291167707331,
+        -4.5861326475001765e-11,
+        -9.810000000014867
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1747907444747972,
+        2.7992945343043036e-10,
+        8.553995237892323e-11
+      ],
+      "dvl_altitude_m": 14.999999995693116,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.010411571873986942,
+        0.32142610732545557,
+        -4.99094129886012
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1688900425740085,
+        -0.00030689771468380024,
+        0.006717172393137848
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.4933991535966,
+          "thrust_n": 10.23471872353124,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.4933991535966,
+          "thrust_n": 10.23471872353124,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.205129146575928,
+      "stamp_ros_s": 1792956648.075371,
+      "sequence": 62,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.0648787,
+        "imu": 1792956648.0527084,
+        "pressure": 1792956648.0646706,
+        "dvl": 1792956648.0647874,
+        "navigation": 1792956648.0648265
+      },
+      "sources_age_s": {
+        "thruster_state": 0.010492324829101562,
+        "imu": 0.022662639617919922,
+        "pressure": 0.010700464248657227,
+        "dvl": 0.010583639144897461,
+        "navigation": 0.010544538497924805
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067803191369,
+        0.7071067820539582,
+        2.626209340808986e-10,
+        -2.626209253230008e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.7979925827063257e-17,
+        7.482508598198865e-10,
+        -8.90187586048163e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.040368679618165114,
+        -4.893976323220958e-11,
+        -9.810000000015062
+      ],
+      "dvl_velocity_body_m_s": [
+        0.17884537542252263,
+        2.929159770773371e-10,
+        9.168543967124647e-11
+      ],
+      "dvl_altitude_m": 14.999999995432093,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.011412552575909597,
+        0.34535187784184745,
+        -4.990316100615547
+      ],
+      "velocity_estimate_body_m_s": [
+        0.18267926939996665,
+        -0.005663244495844872,
+        -0.005952749837933955
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.5654824424457,
+          "thrust_n": 10.23568471080676,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.5654824424457,
+          "thrust_n": 10.23568471080676,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.305065155029297,
+      "stamp_ros_s": 1792956648.175307,
+      "sequence": 63,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.1652684,
+        "imu": 1792956648.1530635,
+        "pressure": 1792956648.165038,
+        "dvl": 1792956648.1651762,
+        "navigation": 1792956648.1652155
+      },
+      "sources_age_s": {
+        "thruster_state": 0.010038614273071289,
+        "imu": 0.022243499755859375,
+        "pressure": 0.010268926620483398,
+        "dvl": 0.010130882263183594,
+        "navigation": 0.010091543197631836
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067802650788,
+        0.7071067821080164,
+        2.8780007398924356e-10,
+        -2.878000645028848e-10
+      ],
+      "angular_velocity_rad_s": [
+        -7.615810563210105e-18,
+        7.152800683610452e-10,
+        -1.6298078926105225e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03978096630542774,
+        -5.156486676352752e-11,
+        -9.810000000017137
+      ],
+      "dvl_velocity_body_m_s": [
+        0.18284104216578206,
+        3.1666669541883475e-10,
+        1.0287139656963199e-10
+      ],
+      "dvl_altitude_m": 14.999999995001465,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.00715846313714623,
+        0.3698527706814743,
+        -5.002429901446163
+      ],
+      "velocity_estimate_body_m_s": [
+        0.1761434907779914,
+        -0.0024738549869707327,
+        -0.006453025911446949
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.624379737595,
+          "thrust_n": 10.236474026580538,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.624379737595,
+          "thrust_n": 10.236474026580538,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.404465675354004,
+      "stamp_ros_s": 1792956648.2747076,
+      "sequence": 64,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.2601652,
+        "imu": 1792956648.2730343,
+        "pressure": 1792956648.2600174,
+        "dvl": 1792956648.2601182,
+        "navigation": 1792956648.2601373
+      },
+      "sources_age_s": {
+        "thruster_state": 0.014542341232299805,
+        "imu": 0.0016732215881347656,
+        "pressure": 0.014690160751342773,
+        "dvl": 0.014589309692382812,
+        "navigation": 0.014570236206054688
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067802001434,
+        0.7071067821729518,
+        3.249657280826549e-10,
+        -3.2496571788181273e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.1533270238882831e-17,
+        9.957121196765517e-10,
+        -1.405852806623016e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03908419749811814,
+        -5.730337032946379e-11,
+        -9.810000000019613
+      ],
+      "dvl_velocity_body_m_s": [
+        0.1867783925785552,
+        3.394273764250157e-10,
+        1.172205808433203e-10
+      ],
+      "dvl_altitude_m": 14.99999999447038,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.006587921279449602,
+        0.3852285655276791,
+        -5.005847933045773
+      ],
+      "velocity_estimate_body_m_s": [
+        0.18472269003872555,
+        0.002743872411989936,
+        0.0027334588954170064
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.672503115861,
+          "thrust_n": 10.23711897762663,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.672503115861,
+          "thrust_n": 10.23711897762663,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.5017969608306885,
+      "stamp_ros_s": 1792956648.3720388,
+      "sequence": 65,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.362864,
+        "imu": 1792956648.349098,
+        "pressure": 1792956648.362656,
+        "dvl": 1792956648.362767,
+        "navigation": 1792956648.362809
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009174823760986328,
+        "imu": 0.022940874099731445,
+        "pressure": 0.00938272476196289,
+        "dvl": 0.009271860122680664,
+        "navigation": 0.009229898452758789
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801581514,
+        0.7071067822149437,
+        3.543857098402853e-10,
+        -3.543856990556489e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.43449409877962e-17,
+        1.1493066423667113e-09,
+        -1.2807878608665127e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03862464396126729,
+        -6.061474076334054e-11,
+        -9.810000000021764
+      ],
+      "dvl_velocity_body_m_s": [
+        0.19065806269712968,
+        3.6112520930679213e-10,
+        1.3488251689571034e-10
+      ],
+      "dvl_altitude_m": 14.999999993834653,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.004011827691369879,
+        0.39957750415141724,
+        -4.977650807080008
+      ],
+      "velocity_estimate_body_m_s": [
+        0.19678078595247378,
+        -0.0014914387388441233,
+        0.005807372176352168
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.7118234196168,
+          "thrust_n": 10.237645964670282,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.7118234196168,
+          "thrust_n": 10.237645964670282,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.601677894592285,
+      "stamp_ros_s": 1792956648.4719198,
+      "sequence": 66,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.4592073,
+        "imu": 1792956648.4709895,
+        "pressure": 1792956648.4590065,
+        "dvl": 1792956648.4591062,
+        "navigation": 1792956648.459148
+      },
+      "sources_age_s": {
+        "thruster_state": 0.012712478637695312,
+        "imu": 0.0009303092956542969,
+        "pressure": 0.012913227081298828,
+        "dvl": 0.012813568115234375,
+        "navigation": 0.012771844863891602
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067800970062,
+        0.7071067822760889,
+        4.0574586191873294e-10,
+        -4.057458503454897e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.2833579505396085e-17,
+        1.2602086658451708e-09,
+        -1.4682795796544573e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03794346414037459,
+        -6.532127746146108e-11,
+        -9.81000000002562
+      ],
+      "dvl_velocity_body_m_s": [
+        0.19448070739073006,
+        3.826317140002308e-10,
+        1.5581746774978965e-10
+      ],
+      "dvl_altitude_m": 14.99999999309936,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0034927423768907825,
+        0.4034418123319948,
+        -5.0049832689804195
+      ],
+      "velocity_estimate_body_m_s": [
+        0.19138885452731036,
+        -0.001066451368378019,
+        -0.008679999652207704
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.743950970575,
+          "thrust_n": 10.238076561522186,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.743950970575,
+          "thrust_n": 10.238076561522186,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.701446771621704,
+      "stamp_ros_s": 1792956648.5716887,
+      "sequence": 67,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.5559509,
+        "imu": 1792956648.5558493,
+        "pressure": 1792956648.5698297,
+        "dvl": 1792956648.4591062,
+        "navigation": 1792956648.459148
+      },
+      "sources_age_s": {
+        "thruster_state": 0.01573777198791504,
+        "imu": 0.015839338302612305,
+        "pressure": 0.0018589496612548828,
+        "dvl": 0.11258244514465332,
+        "navigation": 0.11254072189331055
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067800906623,
+        0.7071067822824328,
+        4.5210824983767926e-10,
+        -4.5210823671450237e-10
+      ],
+      "angular_velocity_rad_s": [
+        -3.929270025455934e-17,
+        1.863388508558912e-09,
+        5.977845546438489e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03749481736373516,
+        -6.965276286741917e-11,
+        -9.810000000028513
+      ],
+      "dvl_velocity_body_m_s": [
+        0.19448070739073006,
+        3.826317140002308e-10,
+        1.5581746774978965e-10
+      ],
+      "dvl_altitude_m": 14.99999999309936,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0034927423768907825,
+        0.4034418123319948,
+        -5.0049832689804195
+      ],
+      "velocity_estimate_body_m_s": [
+        0.19138885452731036,
+        -0.001066451368378019,
+        -0.008679999652207704
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.767808617521,
+          "thrust_n": 10.238396324952491,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.767808617521,
+          "thrust_n": 10.238396324952491,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.805424213409424,
+      "stamp_ros_s": 1792956648.675666,
+      "sequence": 68,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.6670282,
+        "imu": 1792956648.6528244,
+        "pressure": 1792956648.6667836,
+        "dvl": 1792956648.6668928,
+        "navigation": 1792956648.6669312
+      },
+      "sources_age_s": {
+        "thruster_state": 0.00863790512084961,
+        "imu": 0.022841691970825195,
+        "pressure": 0.008882522583007812,
+        "dvl": 0.008773326873779297,
+        "navigation": 0.008734941482543945
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801448979,
+        0.7071067822281973,
+        5.106626489644361e-10,
+        -5.106626330225523e-10
+      ],
+      "angular_velocity_rad_s": [
+        -4.733255247334378e-17,
+        1.4584370361571935e-09,
+        2.2661786663024565e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03693992116492384,
+        -6.914437463270352e-11,
+        -9.810000000033966
+      ],
+      "dvl_velocity_body_m_s": [
+        0.20195759144169204,
+        3.396069193638706e-10,
+        2.1433183290056394e-10
+      ],
+      "dvl_altitude_m": 14.9999999911218,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0016565304844837641,
+        0.44499418793713647,
+        -4.987287907133655
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2041462297419498,
+        -0.008311732149531677,
+        -0.0027606631092959508
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.7916501279467,
+          "thrust_n": 10.238715877093838,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.7916501279467,
+          "thrust_n": 10.238715877093838,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 6.902905464172363,
+      "stamp_ros_s": 1792956648.7731473,
+      "sequence": 69,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.7635462,
+        "imu": 1792956648.7501798,
+        "pressure": 1792956648.7633028,
+        "dvl": 1792956648.7634773,
+        "navigation": 1792956648.763505
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009601116180419922,
+        "imu": 0.02296757698059082,
+        "pressure": 0.009844541549682617,
+        "dvl": 0.009670019149780273,
+        "navigation": 0.009642362594604492
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067802284228,
+        0.7071067821446725,
+        5.674890048773813e-10,
+        -5.674889864318758e-10
+      ],
+      "angular_velocity_rad_s": [
+        -3.2177859429958796e-17,
+        1.461057615310393e-09,
+        1.9824559963650137e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03639166238078592,
+        -6.183601922560003e-11,
+        -9.810000000038817
+      ],
+      "dvl_velocity_body_m_s": [
+        0.205613160942254,
+        2.8791230039496075e-10,
+        2.432875887521693e-10
+      ],
+      "dvl_altitude_m": 14.999999990147973,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0028117907475386796,
+        0.4777103879360218,
+        -5.012074204360751
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2043401624011708,
+        -0.0027806876087278134,
+        0.006686677605471825
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8091752032142,
+          "thrust_n": 10.238950772075109,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8091752032142,
+          "thrust_n": 10.238950772075109,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.004837274551392,
+      "stamp_ros_s": 1792956648.8750792,
+      "sequence": 70,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.8656178,
+        "imu": 1792956648.8530347,
+        "pressure": 1792956648.8653207,
+        "dvl": 1792956648.8655043,
+        "navigation": 1792956648.8655488
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009461402893066406,
+        "imu": 0.02204442024230957,
+        "pressure": 0.009758472442626953,
+        "dvl": 0.00957489013671875,
+        "navigation": 0.009530305862426758
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067802306867,
+        0.7071067821424084,
+        6.18414238688788e-10,
+        -6.18414220370893e-10
+      ],
+      "angular_velocity_rad_s": [
+        1.7550335811056654e-17,
+        1.1088837896165548e-09,
+        -2.129604258631725e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03585012043552561,
+        -5.75252319402367e-11,
+        -9.810000000043607
+      ],
+      "dvl_velocity_body_m_s": [
+        0.209214361484873,
+        2.8349796748425896e-10,
+        2.6795280537772895e-10
+      ],
+      "dvl_altitude_m": 14.999999989303245,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.02944050767994562,
+        0.487596600178011,
+        -5.002658318744867
+      ],
+      "velocity_estimate_body_m_s": [
+        0.21024082094881463,
+        0.004527104513527793,
+        0.00409095437408206
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8234944656542,
+          "thrust_n": 10.239142700376966,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8234944656542,
+          "thrust_n": 10.239142700376966,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.104092121124268,
+      "stamp_ros_s": 1792956648.974334,
+      "sequence": 71,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956648.9643826,
+        "imu": 1792956648.9533956,
+        "pressure": 1792956648.9642026,
+        "dvl": 1792956648.964293,
+        "navigation": 1792956648.9643297
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009951353073120117,
+        "imu": 0.020938396453857422,
+        "pressure": 0.010131359100341797,
+        "dvl": 0.010040998458862305,
+        "navigation": 0.010004281997680664
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.707106780228835,
+        0.7071067821442601,
+        6.545098421274987e-10,
+        -6.545098252393854e-10
+      ],
+      "angular_velocity_rad_s": [
+        9.050694380906963e-18,
+        9.54621683938397e-10,
+        1.9544534640154027e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03531517943570614,
+        -5.8057559079603155e-11,
+        -9.81000000004754
+      ],
+      "dvl_velocity_body_m_s": [
+        0.21276187597093502,
+        2.780661603998332e-10,
+        2.845627440022478e-10
+      ],
+      "dvl_altitude_m": 14.999999988698578,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.012869800138385856,
+        0.51668766286635,
+        -5.011486193062348
+      ],
+      "velocity_estimate_body_m_s": [
+        0.21012730827712547,
+        0.0059634622195896166,
+        -0.006132269707213227
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8351943456084,
+          "thrust_n": 10.239299521108624,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8351943456084,
+          "thrust_n": 10.239299521108624,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.20192551612854,
+      "stamp_ros_s": 1792956649.0721674,
+      "sequence": 72,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.0632603,
+        "imu": 1792956649.0502715,
+        "pressure": 1792956649.0630488,
+        "dvl": 1792956649.0631824,
+        "navigation": 1792956649.0632093
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008907079696655273,
+        "imu": 0.021895885467529297,
+        "pressure": 0.00911855697631836,
+        "dvl": 0.008985042572021484,
+        "navigation": 0.008958101272583008
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067802008156,
+        0.7071067821722794,
+        6.924928374255281e-10,
+        -6.924928211566459e-10
+      ],
+      "angular_velocity_rad_s": [
+        1.0735462372633606e-17,
+        1.190839933226835e-09,
+        -1.346041325377699e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03478680497579293,
+        -5.760850517053602e-11,
+        -9.810000000050616
+      ],
+      "dvl_velocity_body_m_s": [
+        0.21625635665295728,
+        2.925966918623539e-10,
+        3.0323166642470463e-10
+      ],
+      "dvl_altitude_m": 14.999999988034796,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.00792826704378916,
+        0.5321410270582609,
+        -5.010130041956837
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2055157251180375,
+        0.0032184966806018036,
+        0.0020741877047568964
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.844753999363,
+          "thrust_n": 10.239427655955502,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.844753999363,
+          "thrust_n": 10.239427655955502,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.301793098449707,
+      "stamp_ros_s": 1792956649.172035,
+      "sequence": 73,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.1632383,
+        "imu": 1792956649.1507816,
+        "pressure": 1792956649.1631234,
+        "dvl": 1792956649.1631877,
+        "navigation": 1792956649.163205
+      },
+      "sources_age_s": {
+        "thruster_state": 0.00879669189453125,
+        "imu": 0.021253347396850586,
+        "pressure": 0.008911609649658203,
+        "dvl": 0.008847236633300781,
+        "navigation": 0.008830070495605469
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801543272,
+        0.707106782218768,
+        7.404987668013959e-10,
+        -7.404987509688306e-10
+      ],
+      "angular_velocity_rad_s": [
+        1.2504765067927406e-18,
+        1.4318516270073002e-09,
+        -8.803067400607951e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03426503359575677,
+        -6.251038537389976e-11,
+        -9.810000000054611
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2196984648664247,
+        3.138483703461683e-10,
+        3.279466877668681e-10
+      ],
+      "dvl_altitude_m": 14.999999987203793,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0024930250242140317,
+        0.555367006336746,
+        -5.003795343926087
+      ],
+      "velocity_estimate_body_m_s": [
+        0.21671343562260822,
+        -0.00497988926513733,
+        -0.006641252775036313
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8525649324888,
+          "thrust_n": 10.239532352049658,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8525649324888,
+          "thrust_n": 10.239532352049658,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.404751539230347,
+      "stamp_ros_s": 1792956649.2749934,
+      "sequence": 74,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.2613509,
+        "imu": 1792956649.2741191,
+        "pressure": 1792956649.2612007,
+        "dvl": 1792956649.2613013,
+        "navigation": 1792956649.2613258
+      },
+      "sources_age_s": {
+        "thruster_state": 0.013642549514770508,
+        "imu": 0.0008742809295654297,
+        "pressure": 0.013792753219604492,
+        "dvl": 0.013692140579223633,
+        "navigation": 0.013667583465576172
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801185176,
+        0.7071067822545777,
+        8.009670942158565e-10,
+        -8.009670772519091e-10
+      ],
+      "angular_velocity_rad_s": [
+        -1.9226282885655186e-17,
+        1.500150355512825e-09,
+        -1.050008869860806e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.033647495183110686,
+        -6.602922629333821e-11,
+        -9.810000000060112
+      ],
+      "dvl_velocity_body_m_s": [
+        0.22308885865998562,
+        3.25751203250408e-10,
+        3.53530216750685e-10
+      ],
+      "dvl_altitude_m": 14.999999986349936,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.003144721355884611,
+        0.5801875862967022,
+        -4.993069507048917
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2197552893606217,
+        -0.008698584822025117,
+        -0.004673924722016534
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8589470335423,
+          "thrust_n": 10.239617896778515,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8589470335423,
+          "thrust_n": 10.239617896778515,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.506512403488159,
+      "stamp_ros_s": 1792956649.3767543,
+      "sequence": 75,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.369046,
+        "imu": 1792956649.36895,
+        "pressure": 1792956649.3586345,
+        "dvl": 1792956649.3586931,
+        "navigation": 1792956649.3587134
+      },
+      "sources_age_s": {
+        "thruster_state": 0.007708311080932617,
+        "imu": 0.007804393768310547,
+        "pressure": 0.01811981201171875,
+        "dvl": 0.018061161041259766,
+        "navigation": 0.018040895462036133
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.707106780079123,
+        0.7071067822939721,
+        8.547558245753278e-10,
+        -8.547558072723395e-10
+      ],
+      "angular_velocity_rad_s": [
+        -5.911970559425725e-18,
+        1.5446525906947912e-09,
+        -1.4618523603433102e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03314038109089374,
+        -6.908521811211474e-11,
+        -9.810000000065331
+      ],
+      "dvl_velocity_body_m_s": [
+        0.22642819722658325,
+        3.431233099851499e-10,
+        3.813562763254459e-10
+      ],
+      "dvl_altitude_m": 14.999999985437107,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.003213331265471105,
+        0.613594440480165,
+        -4.973396596305767
+      ],
+      "velocity_estimate_body_m_s": [
+        0.23509562618527974,
+        -0.006101755559636863,
+        0.003071554347257686
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.864627514913,
+          "thrust_n": 10.239694037402552,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.864627514913,
+          "thrust_n": 10.239694037402552,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.600836277008057,
+      "stamp_ros_s": 1792956649.4710782,
+      "sequence": 76,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.4559698,
+        "imu": 1792956649.455881,
+        "pressure": 1792956649.4690979,
+        "dvl": 1792956649.4692163,
+        "navigation": 1792956649.469251
+      },
+      "sources_age_s": {
+        "thruster_state": 0.015108346939086914,
+        "imu": 0.015197038650512695,
+        "pressure": 0.001980304718017578,
+        "dvl": 0.0018618106842041016,
+        "navigation": 0.001827239990234375
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.707106780028983,
+        0.7071067823441122,
+        9.000930117888903e-10,
+        -9.000929943617274e-10
+      ],
+      "angular_velocity_rad_s": [
+        -2.8180677991694452e-18,
+        1.6436959161231884e-09,
+        -1.5783481203733905e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03273885828365379,
+        -7.262471227568852e-11,
+        -9.810000000069222
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2297171217114286,
+        3.7575776785059676e-10,
+        4.109978668581642e-10
+      ],
+      "dvl_altitude_m": 14.999999984477142,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0052453874938715095,
+        0.6195239201710596,
+        -5.002147063864424
+      ],
+      "velocity_estimate_body_m_s": [
+        0.23086572800279082,
+        -6.68532116913117e-05,
+        -0.0014977495829874173
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8680340231233,
+          "thrust_n": 10.239739698045605,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8680340231233,
+          "thrust_n": 10.239739698045605,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.7048938274383545,
+      "stamp_ros_s": 1792956649.5751357,
+      "sequence": 77,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.566593,
+        "imu": 1792956649.5536373,
+        "pressure": 1792956649.566305,
+        "dvl": 1792956649.5664637,
+        "navigation": 1792956649.5665214
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008542776107788086,
+        "imu": 0.021498441696166992,
+        "pressure": 0.008830785751342773,
+        "dvl": 0.008671998977661133,
+        "navigation": 0.008614301681518555
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799976994,
+        0.7071067823753957,
+        9.58369293609605e-10,
+        -9.583692757389765e-10
+      ],
+      "angular_velocity_rad_s": [
+        -9.918826370811961e-18,
+        1.8580066103211174e-09,
+        -5.126181880582202e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03224334050632973,
+        -7.852371393903095e-11,
+        -9.81000000007462
+      ],
+      "dvl_velocity_body_m_s": [
+        0.23295628241731428,
+        3.855687181908564e-10,
+        4.4242027960033276e-10
+      ],
+      "dvl_altitude_m": 14.999999983470172,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.016859941966491567,
+        0.6526615096105448,
+        -5.001298656649966
+      ],
+      "velocity_estimate_body_m_s": [
+        0.22600462261554866,
+        0.0009154125088364996,
+        -0.0026751015272554373
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8719037523542,
+          "thrust_n": 10.239791567800482,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8719037523542,
+          "thrust_n": 10.239791567800482,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.80384635925293,
+      "stamp_ros_s": 1792956649.6740882,
+      "sequence": 78,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.6653113,
+        "imu": 1792956649.6541066,
+        "pressure": 1792956649.665146,
+        "dvl": 1792956649.6652339,
+        "navigation": 1792956649.6652656
+      },
+      "sources_age_s": {
+        "thruster_state": 0.00877690315246582,
+        "imu": 0.01998162269592285,
+        "pressure": 0.008942127227783203,
+        "dvl": 0.008854389190673828,
+        "navigation": 0.00882267951965332
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799769883,
+        0.7071067823961069,
+        1.0249367279393497e-09,
+        -1.0249367080917733e-09
+      ],
+      "angular_velocity_rad_s": [
+        -4.33647184489656e-17,
+        1.813653957794053e-09,
+        -1.0001895490571629e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03175404675227609,
+        -7.995118557239387e-11,
+        -9.81000000008112
+      ],
+      "dvl_velocity_body_m_s": [
+        0.23614631834735803,
+        3.927006840119486e-10,
+        4.785254627892296e-10
+      ],
+      "dvl_altitude_m": 14.999999982341116,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.013326014869183169,
+        0.6851887684845868,
+        -4.992481742940979
+      ],
+      "velocity_estimate_body_m_s": [
+        0.247172285470068,
+        0.006404058036021848,
+        0.008885828331301802
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8747482573713,
+          "thrust_n": 10.239829695559141,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8747482573713,
+          "thrust_n": 10.239829695559141,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 7.902968406677246,
+      "stamp_ros_s": 1792956649.7732103,
+      "sequence": 79,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.7608209,
+        "imu": 1792956649.7718952,
+        "pressure": 1792956649.7607229,
+        "dvl": 1792956649.7607746,
+        "navigation": 1792956649.7607937
+      },
+      "sources_age_s": {
+        "thruster_state": 0.012389421463012695,
+        "imu": 0.0013151168823242188,
+        "pressure": 0.012487411499023438,
+        "dvl": 0.012435674667358398,
+        "navigation": 0.012416601181030273
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799350889,
+        0.7071067824380064,
+        1.1013478096533029e-09,
+        -1.101347785912467e-09
+      ],
+      "angular_velocity_rad_s": [
+        -5.3230384847268606e-17,
+        1.8396497438736463e-09,
+        -1.068831402749354e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03117510928047242,
+        -8.340704978087342e-11,
+        -9.810000000088678
+      ],
+      "dvl_velocity_body_m_s": [
+        0.23928786125073834,
+        4.075884350583511e-10,
+        5.127106843805097e-10
+      ],
+      "dvl_altitude_m": 14.999999981262183,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.025078298882267508,
+        0.7052521657989244,
+        -4.989066373158095
+      ],
+      "velocity_estimate_body_m_s": [
+        0.23808867020362995,
+        -0.002519647026626402,
+        0.0020903121544836125
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8770724250703,
+          "thrust_n": 10.239860848766629,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8770724250703,
+          "thrust_n": 10.239860848766629,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.00104832649231,
+      "stamp_ros_s": 1792956649.8712902,
+      "sequence": 80,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.8575492,
+        "imu": 1792956649.8573961,
+        "pressure": 1792956649.8705719,
+        "dvl": 1792956649.7607746,
+        "navigation": 1792956649.7607937
+      },
+      "sources_age_s": {
+        "thruster_state": 0.013741016387939453,
+        "imu": 0.013894081115722656,
+        "pressure": 0.0007183551788330078,
+        "dvl": 0.11051559448242188,
+        "navigation": 0.11049652099609375
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799120386,
+        0.7071067824610565,
+        1.1554122934362492e-09,
+        -1.1554122666443514e-09
+      ],
+      "angular_velocity_rad_s": [
+        -5.2843979233799436e-17,
+        1.78120190878271e-09,
+        -9.37174461104525e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.03079432778179363,
+        -8.582359464587753e-11,
+        -9.810000000094323
+      ],
+      "dvl_velocity_body_m_s": [
+        0.23928786125073834,
+        4.075884350583511e-10,
+        5.127106843805097e-10
+      ],
+      "dvl_altitude_m": 14.999999981262183,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.025078298882267508,
+        0.7052521657989244,
+        -4.989066373158095
+      ],
+      "velocity_estimate_body_m_s": [
+        0.23808867020362995,
+        -0.002519647026626402,
+        0.0020903121544836125
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8787983322982,
+          "thrust_n": 10.239883982905038,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8787983322982,
+          "thrust_n": 10.239883982905038,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.100964546203613,
+      "stamp_ros_s": 1792956649.9712064,
+      "sequence": 81,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956649.9581306,
+        "imu": 1792956649.9577627,
+        "pressure": 1792956649.969824,
+        "dvl": 1792956649.870656,
+        "navigation": 1792956649.8706744
+      },
+      "sources_age_s": {
+        "thruster_state": 0.013075828552246094,
+        "imu": 0.013443708419799805,
+        "pressure": 0.0013823509216308594,
+        "dvl": 0.10055041313171387,
+        "navigation": 0.10053205490112305
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067798810876,
+        0.7071067824920075,
+        1.2183197023429573e-09,
+        -1.218319671868244e-09
+      ],
+      "angular_velocity_rad_s": [
+        -5.3080442589120894e-17,
+        1.6637876051005296e-09,
+        -1.2467092226240743e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.03032339895582164,
+        -8.795251433899051e-11,
+        -9.810000000100898
+      ],
+      "dvl_velocity_body_m_s": [
+        0.24238153976156937,
+        4.194695925578901e-10,
+        5.490840287564709e-10
+      ],
+      "dvl_altitude_m": 14.999999980125382,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.010119765027276469,
+        0.7252574368196126,
+        -5.031387354747771
+      ],
+      "velocity_estimate_body_m_s": [
+        0.23855579684465134,
+        0.0019757299035365722,
+        -0.002303790447137369
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.880381631159,
+          "thrust_n": 10.239905205537438,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.880381631159,
+          "thrust_n": 10.239905205537438,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.203826904296875,
+      "stamp_ros_s": 1792956650.0740688,
+      "sequence": 82,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.0656047,
+        "imu": 1792956650.0522375,
+        "pressure": 1792956650.0653849,
+        "dvl": 1792956650.0655408,
+        "navigation": 1792956650.0655687
+      },
+      "sources_age_s": {
+        "thruster_state": 0.00846409797668457,
+        "imu": 0.021831274032592773,
+        "pressure": 0.008683919906616211,
+        "dvl": 0.008527994155883789,
+        "navigation": 0.008500099182128906
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.707106779865164,
+        0.7071067825079311,
+        1.267157666182466e-09,
+        -1.2671576335293805e-09
+      ],
+      "angular_velocity_rad_s": [
+        -3.7746964883667565e-17,
+        1.298730974022935e-09,
+        5.163318384309382e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.029859249510594446,
+        -9.291145656374784e-11,
+        -9.8100000001072
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2484277847258043,
+        4.304537418383156e-10,
+        6.050248537317064e-10
+      ],
+      "dvl_altitude_m": 14.999999978273186,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0037465064867995496,
+        0.7828961895329938,
+        -5.005329440191271
+      ],
+      "velocity_estimate_body_m_s": [
+        0.24097821004175027,
+        0.0006526121841719043,
+        -0.011080218349484972
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8817908692151,
+          "thrust_n": 10.239924095066927,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8817908692151,
+          "thrust_n": 10.239924095066927,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.30275297164917,
+      "stamp_ros_s": 1792956650.1729949,
+      "sequence": 83,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.1635463,
+        "imu": 1792956650.1505024,
+        "pressure": 1792956650.1633406,
+        "dvl": 1792956650.1634889,
+        "navigation": 1792956650.1635156
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009448528289794922,
+        "imu": 0.022492408752441406,
+        "pressure": 0.00965428352355957,
+        "dvl": 0.009505987167358398,
+        "navigation": 0.009479284286499023
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067798850962,
+        0.707106782487999,
+        1.3204529876617672e-09,
+        -1.3204529527856257e-09
+      ],
+      "angular_velocity_rad_s": [
+        -5.041908828069106e-17,
+        1.7269038474477384e-09,
+        7.842990607709996e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.029400990199518775,
+        -9.1904935169482e-11,
+        -9.810000000111994
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2513815887576743,
+        4.0631054693436513e-10,
+        6.327359954364798e-10
+      ],
+      "dvl_altitude_m": 14.999999977354367,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.010393227401211257,
+        0.8130168098641144,
+        -4.999726694590706
+      ],
+      "velocity_estimate_body_m_s": [
+        0.25558695616877564,
+        0.003956036226040939,
+        -0.002254138078315288
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8828267516976,
+          "thrust_n": 10.239937980122235,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8828267516976,
+          "thrust_n": 10.239937980122235,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.40206241607666,
+      "stamp_ros_s": 1792956650.2723043,
+      "sequence": 84,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.2634063,
+        "imu": 1792956650.2505903,
+        "pressure": 1792956650.2632382,
+        "dvl": 1792956650.2633383,
+        "navigation": 1792956650.263367
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008898019790649414,
+        "imu": 0.021713972091674805,
+        "pressure": 0.009066104888916016,
+        "dvl": 0.00896596908569336,
+        "navigation": 0.008937358856201172
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799232762,
+        0.707106782449819,
+        1.3814379821325205e-09,
+        -1.3814379442306664e-09
+      ],
+      "angular_velocity_rad_s": [
+        -3.920769836177611e-17,
+        1.6897390526670446e-09,
+        1.3314627661917033e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.028948763234567406,
+        -8.956937858019435e-11,
+        -9.810000000118249
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2542899894279006,
+        3.691843628143924e-10,
+        6.646977137532262e-10
+      ],
+      "dvl_altitude_m": 14.999999976330692,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.01657847611656823,
+        0.8321335536772771,
+        -5.008534168144315
+      ],
+      "velocity_estimate_body_m_s": [
+        0.26265903586140615,
+        0.005129986746997436,
+        -0.0017741767934040897
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8836731431052,
+          "thrust_n": 10.239949325230345,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8836731431052,
+          "thrust_n": 10.239949325230345,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.500880479812622,
+      "stamp_ros_s": 1792956650.3711224,
+      "sequence": 85,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.3619673,
+        "imu": 1792956650.3484733,
+        "pressure": 1792956650.361729,
+        "dvl": 1792956650.36187,
+        "navigation": 1792956650.36192
+      },
+      "sources_age_s": {
+        "thruster_state": 0.009155035018920898,
+        "imu": 0.022649049758911133,
+        "pressure": 0.009393453598022461,
+        "dvl": 0.009252309799194336,
+        "navigation": 0.009202241897583008
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067799636644,
+        0.7071067824094307,
+        1.4498335457710944e-09,
+        -1.4498335040125556e-09
+      ],
+      "angular_velocity_rad_s": [
+        -7.06713173483171e-17,
+        2.0424927348715508e-09,
+        9.51789042633734e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.028502446957817267,
+        -8.51871566768975e-11,
+        -9.810000000124486
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2571535817873704,
+        3.314435243617956e-10,
+        7.026500854878092e-10
+      ],
+      "dvl_altitude_m": 14.999999975163377,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.005012668902605161,
+        0.8565386307265843,
+        -4.99144576852184
+      ],
+      "velocity_estimate_body_m_s": [
+        0.26370178376066067,
+        0.006637073495261766,
+        -0.0026959393896645104
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.884364706508,
+          "thrust_n": 10.23995859501433,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.884364706508,
+          "thrust_n": 10.23995859501433,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.603783369064331,
+      "stamp_ros_s": 1792956650.4740252,
+      "sequence": 86,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.460642,
+        "imu": 1792956650.4731884,
+        "pressure": 1792956650.4604948,
+        "dvl": 1792956650.460551,
+        "navigation": 1792956650.460575
+      },
+      "sources_age_s": {
+        "thruster_state": 0.013383150100708008,
+        "imu": 0.0008368492126464844,
+        "pressure": 0.013530492782592773,
+        "dvl": 0.013474225997924805,
+        "navigation": 0.013450145721435547
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067800215992,
+        0.707106782351496,
+        1.5324256389145751e-09,
+        -1.5324255919844769e-09
+      ],
+      "angular_velocity_rad_s": [
+        -6.038079838529542e-17,
+        1.9109578462140137e-09,
+        1.648085378965825e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.027974938948903988,
+        -7.960420977747686e-11,
+        -9.810000000133938
+      ],
+      "dvl_velocity_body_m_s": [
+        0.259972973786004,
+        2.8802471235434193e-10,
+        7.398289093108436e-10
+      ],
+      "dvl_altitude_m": 14.999999974011315,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.009806213269261796,
+        0.876900261773787,
+        -4.981328041892447
+      ],
+      "velocity_estimate_body_m_s": [
+        0.26472164945566673,
+        -0.005160116554524261,
+        -0.010935418510493015
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8849297641589,
+          "thrust_n": 10.23996616910587,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8849297641589,
+          "thrust_n": 10.23996616910587,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.70677924156189,
+      "stamp_ros_s": 1792956650.5770211,
+      "sequence": 87,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.5686507,
+        "imu": 1792956650.568594,
+        "pressure": 1792956650.5683103,
+        "dvl": 1792956650.568393,
+        "navigation": 1792956650.5684133
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008370399475097656,
+        "imu": 0.008427143096923828,
+        "pressure": 0.008710861206054688,
+        "dvl": 0.008628129959106445,
+        "navigation": 0.008607864379882812
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067800728694,
+        0.7071067823002257,
+        1.5960622097580886e-09,
+        -1.5960621589250849e-09
+      ],
+      "angular_velocity_rad_s": [
+        -6.781668773141786e-17,
+        2.050006421190747e-09,
+        1.053259216493502e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.027541618186160417,
+        -7.425290417778573e-11,
+        -9.810000000141235
+      ],
+      "dvl_velocity_body_m_s": [
+        0.262748746921476,
+        2.40860315066067e-10,
+        7.727490846163247e-10
+      ],
+      "dvl_altitude_m": 14.999999972957514,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0019329758829056095,
+        0.8820391804935447,
+        -5.004265270522667
+      ],
+      "velocity_estimate_body_m_s": [
+        0.26791582194753377,
+        0.005912842700066299,
+        -0.0067289767696691654
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8854327018953,
+          "thrust_n": 10.239972910537967,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8854327018953,
+          "thrust_n": 10.239972910537967,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.800391674041748,
+      "stamp_ros_s": 1792956650.6706336,
+      "sequence": 88,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.65617,
+        "imu": 1792956650.6561117,
+        "pressure": 1792956650.6689944,
+        "dvl": 1792956650.6690593,
+        "navigation": 1792956650.6690817
+      },
+      "sources_age_s": {
+        "thruster_state": 0.014463663101196289,
+        "imu": 0.01452183723449707,
+        "pressure": 0.0016391277313232422,
+        "dvl": 0.0015742778778076172,
+        "navigation": 0.0015518665313720703
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801151549,
+        0.7071067822579402,
+        1.6531213638571205e-09,
+        -1.6531213086216032e-09
+      ],
+      "angular_velocity_rad_s": [
+        -9.129839708683159e-17,
+        2.1274493417886367e-09,
+        1.6634471211626566e-09
+      ],
+      "linear_acceleration_m_s2": [
+        0.027199172469844924,
+        -6.949687314039805e-11,
+        -9.810000000146573
+      ],
+      "dvl_velocity_body_m_s": [
+        0.26548148521061965,
+        1.9548579059129553e-10,
+        8.120106674810817e-10
+      ],
+      "dvl_altitude_m": 14.999999971754702,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.015501527253183165,
+        0.9429700573913976,
+        -4.998874280166251
+      ],
+      "velocity_estimate_body_m_s": [
+        0.27522273172173534,
+        -0.003593887641466825,
+        -0.0023802962541599635
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8857343068858,
+          "thrust_n": 10.239976953285112,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.8857343068858,
+          "thrust_n": 10.239976953285112,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 8.901193380355835,
+      "stamp_ros_s": 1792956650.7714353,
+      "sequence": 89,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.7559829,
+        "imu": 1792956650.7558465,
+        "pressure": 1792956650.7698164,
+        "dvl": 1792956650.6690593,
+        "navigation": 1792956650.6690817
+      },
+      "sources_age_s": {
+        "thruster_state": 0.015452384948730469,
+        "imu": 0.015588760375976562,
+        "pressure": 0.0016188621520996094,
+        "dvl": 0.10237598419189453,
+        "navigation": 0.10235357284545898
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801625409,
+        0.7071067822105542,
+        1.7304372018047489e-09,
+        -1.7304371404099935e-09
+      ],
+      "angular_velocity_rad_s": [
+        -1.1437126090132286e-16,
+        2.1473184275223437e-09,
+        8.954679640930281e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.02677646741875485,
+        -6.210928537327983e-11,
+        -9.810000000154899
+      ],
+      "dvl_velocity_body_m_s": [
+        0.26548148521061965,
+        1.9548579059129553e-10,
+        8.120106674810817e-10
+      ],
+      "dvl_altitude_m": 14.999999971754702,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.015501527253183165,
+        0.9429700573913976,
+        -4.998874280166251
+      ],
+      "velocity_estimate_body_m_s": [
+        0.27522273172173534,
+        -0.003593887641466825,
+        -0.0023802962541599635
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.886048827384,
+          "thrust_n": 10.239981169154023,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.4,
+          "command_unit": "normalized",
+          "rpm": 1527.886048827384,
+          "thrust_n": 10.239981169154023,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.000409364700317,
+      "stamp_ros_s": 1792956650.8706512,
+      "sequence": 90,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.8682604,
+        "imu": 1792956650.8562026,
+        "pressure": 1792956650.8680465,
+        "dvl": 1792956650.8681679,
+        "navigation": 1792956650.8682077
+      },
+      "sources_age_s": {
+        "thruster_state": 0.0023908615112304688,
+        "imu": 0.01444864273071289,
+        "pressure": 0.0026047229766845703,
+        "dvl": 0.002483367919921875,
+        "navigation": 0.002443552017211914
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7071067801475104,
+        0.7071067822255849,
+        1.8007800235134e-09,
+        -1.8007799556908513e-09
+      ],
+      "angular_velocity_rad_s": [
+        -1.0625597177583339e-16,
+        2.0975769721345797e-09,
+        -8.508576100610086e-10
+      ],
+      "linear_acceleration_m_s2": [
+        0.026359118729506914,
+        -5.915278768201579e-11,
+        -9.810000000163281
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2708201637066032,
+        1.659090910553894e-10,
+        8.925947826936902e-10
+      ],
+      "dvl_altitude_m": 14.999999969292203,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.01631615018052281,
+        0.9717758009474913,
+        -5.0165178013824585
+      ],
+      "velocity_estimate_body_m_s": [
+        0.27038947718333206,
+        -0.007161085215350718,
+        0.005430425987235286
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1527.8863287709034,
+          "thrust_n": 10.239984921549867,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.4,
+          "setpoint_rad_s": 160.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1527.8863287709034,
+          "thrust_n": 10.239984921549867,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.104817152023315,
+      "stamp_ros_s": 1792956650.975059,
+      "sequence": 91,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956650.966201,
+        "imu": 1792956650.9549592,
+        "pressure": 1792956650.9660592,
+        "dvl": 1792956650.966137,
+        "navigation": 1792956650.9661667
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008857965469360352,
+        "imu": 0.020099878311157227,
+        "pressure": 0.008999824523925781,
+        "dvl": 0.008922100067138672,
+        "navigation": 0.008892297744750977
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7070835546658689,
+        0.7071300069443237,
+        1.871953332870762e-09,
+        -1.87196403992842e-09
+      ],
+      "angular_velocity_rad_s": [
+        1.0044304130511996e-11,
+        1.6002149473176809e-09,
+        -0.00193288388380501
+      ],
+      "linear_acceleration_m_s2": [
+        0.02372421194279188,
+        1.4547650499023412e-06,
+        -9.810000000156192
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2732973405661924,
+        2.4501106085025375e-05,
+        9.288141762487843e-10
+      ],
+      "dvl_altitude_m": 14.999999968172189,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.01284931317749774,
+        0.9965781315613231,
+        -5.006516318996969
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2781767516878077,
+        0.01033477438814329,
+        -0.009466864999871026
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1400.8791803538018,
+          "thrust_n": 8.608323693038049,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1591.390211644751,
+          "thrust_n": 11.108888101858087,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.205183506011963,
+      "stamp_ros_s": 1792956651.0754254,
+      "sequence": 92,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.066996,
+        "imu": 1792956651.0542295,
+        "pressure": 1792956651.0668535,
+        "dvl": 1792956651.0669332,
+        "navigation": 1792956651.0669596
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008429288864135742,
+        "imu": 0.02119588851928711,
+        "pressure": 0.008571863174438477,
+        "dvl": 0.008492231369018555,
+        "navigation": 0.008465766906738281
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7069036920273502,
+        0.7073098120329603,
+        1.8249727169576064e-09,
+        -1.842313429262085e-09
+      ],
+      "angular_velocity_rad_s": [
+        7.357931119305774e-10,
+        -3.6477913676515304e-09,
+        -0.008214164903635855
+      ],
+      "linear_acceleration_m_s2": [
+        0.021477122122339543,
+        8.689005882106689e-07,
+        -9.810000000163885
+      ],
+      "dvl_velocity_body_m_s": [
+        0.27551536404889515,
+        0.00018263502962806053,
+        8.665139016272903e-10
+      ],
+      "dvl_altitude_m": 14.999999969051748,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0019592098460156945,
+        1.0370079507740104,
+        -4.998859317860428
+      ],
+      "velocity_estimate_body_m_s": [
+        0.28039644475108344,
+        0.002460743693057148,
+        -0.00937174083472795
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1284.366365648915,
+          "thrust_n": 7.235941968170598,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1649.6468711992154,
+          "thrust_n": 11.937110184682625,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.302305459976196,
+      "stamp_ros_s": 1792956651.1725473,
+      "sequence": 93,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.1624272,
+        "imu": 1792956651.1494062,
+        "pressure": 1792956651.162292,
+        "dvl": 1792956651.1623662,
+        "navigation": 1792956651.1623898
+      },
+      "sources_age_s": {
+        "thruster_state": 0.010120153427124023,
+        "imu": 0.023141145706176758,
+        "pressure": 0.01025533676147461,
+        "dvl": 0.010181188583374023,
+        "navigation": 0.010157585144042969
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7064395220008783,
+        0.7077734113084292,
+        1.3269659500493314e-09,
+        -1.5610448453565322e-09
+      ],
+      "angular_velocity_rad_s": [
+        6.3024032564887615e-09,
+        -1.9024419731089896e-08,
+        -0.017503672767070134
+      ],
+      "linear_acceleration_m_s2": [
+        0.019905653151850604,
+        -1.602306898373148e-05,
+        -9.810000000157693
+      ],
+      "dvl_velocity_body_m_s": [
+        0.27755433388587075,
+        0.0005711715397802821,
+        4.985066524386588e-10
+      ],
+      "dvl_altitude_m": 14.999999974625934,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.01418295544285238,
+        1.0625831881045111,
+        -4.993559834604596
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2750073533141605,
+        -0.006187848910350266,
+        -0.00961208747712518
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1189.1669130996247,
+          "thrust_n": 6.203015429089802,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1697.2468035412733,
+          "thrust_n": 12.635930430236622,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.401100873947144,
+      "stamp_ros_s": 1792956651.2713428,
+      "sequence": 94,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.259777,
+        "imu": 1792956651.2699287,
+        "pressure": 1792956651.259629,
+        "dvl": 1792956651.2596915,
+        "navigation": 1792956651.2597127
+      },
+      "sources_age_s": {
+        "thruster_state": 0.011565685272216797,
+        "imu": 0.0014140605926513672,
+        "pressure": 0.011713743209838867,
+        "dvl": 0.011651277542114258,
+        "navigation": 0.011630058288574219
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7053884760774849,
+        0.7088209208376144,
+        -1.0643665086796292e-09,
+        -6.982587638809973e-10
+      ],
+      "angular_velocity_rad_s": [
+        3.279993158517036e-08,
+        -5.791384426420286e-08,
+        -0.031174976814625
+      ],
+      "linear_acceleration_m_s2": [
+        0.01854139738508274,
+        -7.293809150527696e-05,
+        -9.810000000080603
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2794622374391655,
+        0.0012552218279142002,
+        -5.761466356117238e-10
+      ],
+      "dvl_altitude_m": 14.999999987159319,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.0033728766310596337,
+        1.0941110651915018,
+        -5.000282755899435
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2705945301345143,
+        -0.0030629137868055122,
+        0.00881442174233981
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1111.3820291910179,
+          "thrust_n": 5.418061961888885,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1736.1394138676565,
+          "thrust_n": 13.221673257389927,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.500458240509033,
+      "stamp_ros_s": 1792956651.3707001,
+      "sequence": 95,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.367816,
+        "imu": 1792956651.355805,
+        "pressure": 1792956651.367609,
+        "dvl": 1792956651.367723,
+        "navigation": 1792956651.3677619
+      },
+      "sources_age_s": {
+        "thruster_state": 0.0028841495513916016,
+        "imu": 0.014895200729370117,
+        "pressure": 0.003091096878051758,
+        "dvl": 0.002977132797241211,
+        "navigation": 0.0029382705688476562
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7043450999823014,
+        0.7098577182301549,
+        -4.83756564579594e-09,
+        1.905298289979669e-11
+      ],
+      "angular_velocity_rad_s": [
+        7.42141465618803e-08,
+        -9.717741233827935e-08,
+        -0.04120828178173153
+      ],
+      "linear_acceleration_m_s2": [
+        0.01781211916607977,
+        -0.00013953334500310593,
+        -9.809999999936334
+      ],
+      "dvl_velocity_body_m_s": [
+        0.28126545997792435,
+        0.002275848021745897,
+        -2.817478731899389e-09
+      ],
+      "dvl_altitude_m": 14.999999905787186,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.0001448180118331345,
+        1.1380186152574816,
+        -5.008952280959725
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2824401909698658,
+        -0.01028531010508889,
+        0.006254901221297664
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 1047.8261157623901,
+          "thrust_n": 4.816101867149333,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1767.9175081542178,
+          "thrust_n": 13.710118888075543,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.600627183914185,
+      "stamp_ros_s": 1792956651.470869,
+      "sequence": 96,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.4628832,
+        "imu": 1792956651.450945,
+        "pressure": 1792956651.4627845,
+        "dvl": 1792956651.4628549,
+        "navigation": 1792956651.4628694
+      },
+      "sources_age_s": {
+        "thruster_state": 0.007985830307006836,
+        "imu": 0.019924163818359375,
+        "pressure": 0.008084535598754883,
+        "dvl": 0.008014202117919922,
+        "navigation": 0.007999658584594727
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7026265915983045,
+        0.7115587627026665,
+        -1.3864502093190613e-08,
+        4.386650972409642e-10
+      ],
+      "angular_velocity_rad_s": [
+        1.696920844950619e-07,
+        -1.6594260364687658e-07,
+        -0.05427552755438279
+      ],
+      "linear_acceleration_m_s2": [
+        0.01700537173910953,
+        -0.00026061064756586637,
+        -9.8099999995788
+      ],
+      "dvl_velocity_body_m_s": [
+        0.282975823696067,
+        0.003655860041489253,
+        -6.790401286740201e-09
+      ],
+      "dvl_altitude_m": 14.999999738890212,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.004101600326977088,
+        1.1620913096101433,
+        -5.001841946333615
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2796166573891813,
+        0.005739471663947383,
+        0.002525186151984594
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 995.8963071829596,
+          "thrust_n": 4.350563092782598,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1793.8825248504756,
+          "thrust_n": 14.115791199963603,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.70297384262085,
+      "stamp_ros_s": 1792956651.5732157,
+      "sequence": 97,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.5646532,
+        "imu": 1792956651.550678,
+        "pressure": 1792956651.5645316,
+        "dvl": 1792956651.564609,
+        "navigation": 1792956651.5646284
+      },
+      "sources_age_s": {
+        "thruster_state": 0.008562564849853516,
+        "imu": 0.022537708282470703,
+        "pressure": 0.008684158325195312,
+        "dvl": 0.008606672286987305,
+        "navigation": 0.008587360382080078
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.7004329021672587,
+        0.71371825643005,
+        -3.0372873880003095e-08,
+        -8.860539187105014e-10
+      ],
+      "angular_velocity_rad_s": [
+        3.325237927451384e-07,
+        -2.556371651178012e-07,
+        -0.06753911616872732
+      ],
+      "linear_acceleration_m_s2": [
+        0.016252989927276792,
+        -0.0004282543934642041,
+        -9.809999998950842
+      ],
+      "dvl_velocity_body_m_s": [
+        0.28459542137620825,
+        0.005404225650796661,
+        -1.3159297190041757e-08
+      ],
+      "dvl_altitude_m": 14.999999437146446,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        -0.017439815683788114,
+        1.178789894059516,
+        -4.994358696603227
+      ],
+      "velocity_estimate_body_m_s": [
+        0.27786531234981743,
+        0.0028370991174263083,
+        -0.009381338264286731
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 953.4658727258316,
+          "thrust_n": 3.9877464153418436,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1815.0978339233695,
+          "thrust_n": 14.451645651441462,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.801748991012573,
+      "stamp_ros_s": 1792956651.6719909,
+      "sequence": 98,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.6584127,
+        "imu": 1792956651.6709967,
+        "pressure": 1792956651.6582875,
+        "dvl": 1792956651.6583498,
+        "navigation": 1792956651.6583707
+      },
+      "sources_age_s": {
+        "thruster_state": 0.013578176498413086,
+        "imu": 0.0009942054748535156,
+        "pressure": 0.013703346252441406,
+        "dvl": 0.013641119003295898,
+        "navigation": 0.013620138168334961
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.6971669118897622,
+        0.7169088484361791,
+        -6.51071305561214e-08,
+        -7.688237943062926e-09
+      ],
+      "angular_velocity_rad_s": [
+        6.472230252434715e-07,
+        -3.906097820490118e-07,
+        -0.08328755633105737
+      ],
+      "linear_acceleration_m_s2": [
+        0.015363926173995785,
+        -0.0006962676061543369,
+        -9.80999999766344
+      ],
+      "dvl_velocity_body_m_s": [
+        0.28611984712152794,
+        0.007519432858315439,
+        -2.260449929629163e-08
+      ],
+      "dvl_altitude_m": 14.999998938738532,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.007173865944726783,
+        1.219397952481061,
+        -4.999816705970184
+      ],
+      "velocity_estimate_body_m_s": [
+        0.27971947150420284,
+        0.0033262832515166454,
+        -0.002286781039900994
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 918.7971185464877,
+          "thrust_n": 3.7030235696561395,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1832.4322860565455,
+          "thrust_n": 14.72899441502964,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    },
+    {
+      "stamp_s": 9.902882814407349,
+      "stamp_ros_s": 1792956651.7731247,
+      "sequence": 99,
+      "sources_stamp_ros_s": {
+        "thruster_state": 1792956651.75914,
+        "imu": 1792956651.7723215,
+        "pressure": 1792956651.759017,
+        "dvl": 1792956651.7590737,
+        "navigation": 1792956651.7590966
+      },
+      "sources_age_s": {
+        "thruster_state": 0.01398468017578125,
+        "imu": 0.0008032321929931641,
+        "pressure": 0.014107704162597656,
+        "dvl": 0.014050960540771484,
+        "navigation": 0.014028072357177734
+      },
+      "pressure_pa": 50570.55,
+      "depth_m": 5.0,
+      "orientation_xyzw": [
+        0.6939220849089165,
+        0.720050095532005,
+        -1.1178921159091182e-07,
+        -2.0889123555819078e-08
+      ],
+      "angular_velocity_rad_s": [
+        1.0334545535676829e-06,
+        -5.300832390334768e-07,
+        -0.09602076734598457
+      ],
+      "linear_acceleration_m_s2": [
+        0.014609978876815654,
+        -0.0009786135507947968,
+        -9.80999999597682
+      ],
+      "dvl_velocity_body_m_s": [
+        0.2875406709257583,
+        0.009992072810030613,
+        -3.5987728847824755e-08
+      ],
+      "dvl_altitude_m": 14.999998167163863,
+      "dvl_valid": true,
+      "dvl_validity_method": "bottom_range_available",
+      "position_estimate_m": [
+        0.020129756865238053,
+        1.2460553461683774,
+        -4.9928167358532685
+      ],
+      "velocity_estimate_body_m_s": [
+        0.2868696385916755,
+        0.01352317954276186,
+        -0.011050372130604471
+      ],
+      "thrusters": [
+        {
+          "id": "horizontal_left",
+          "command": 0.2,
+          "setpoint_rad_s": 80.0,
+          "command_sent": 0.2,
+          "command_unit": "normalized",
+          "rpm": 890.4702222578769,
+          "thrust_n": 3.478211841780508,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "horizontal_right",
+          "command": 0.5,
+          "setpoint_rad_s": 200.0,
+          "command_sent": 0.5,
+          "command_unit": "normalized",
+          "rpm": 1846.5957955168574,
+          "thrust_n": 14.957565456433349,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_front",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        },
+        {
+          "id": "vertical_rear",
+          "command": 0.0,
+          "setpoint_rad_s": 0.0,
+          "command_sent": 0.0,
+          "command_unit": "normalized",
+          "rpm": 0.0,
+          "thrust_n": 0.0,
+          "torque_nm": 0.0
+        }
+      ],
+      "expected_motion": null
+    }
+  ]
+}

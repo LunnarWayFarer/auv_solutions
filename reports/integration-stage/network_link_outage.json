@@ -1,0 +1,20 @@
+{
+  "sent_count": 251,
+  "received_unique_count": 210,
+  "loss_pct": 16.334661354581673,
+  "latency_mean_ms": 100.00000000000048,
+  "latency_max_ms": 100.00000000000142,
+  "observed_events": [
+    {
+      "stamp_s": 13.91,
+      "node": "auv_01",
+      "event": "node_unreachable",
+      "reason": "message_timeout"
+    },
+    {
+      "stamp_s": 16.101963138580324,
+      "node": "auv_01",
+      "event": "node_reachable"
+    }
+  ]
+}

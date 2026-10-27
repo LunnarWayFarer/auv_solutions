@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "run_id": "integration-5f283775aba9",
+  "vehicle_id": "auv_01",
+  "window_id": "w0001",
+  "window": {
+    "start_s": 5.0,
+    "end_s": 10.0,
+    "clock_domain": "ros_wall"
+  },
+  "frame_id": "map_enu",
+  "body_frame_id": "body_frd",
+  "status": "ok",
+  "data_quality": {
+    "sample_count": 50,
+    "window_complete": true,
+    "missing_sources": [],
+    "stale_sources": []
+  },
+  "features": {
+    "depth_m": {
+      "valid": true,
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "change": 0.0,
+      "unit": "m"
+    },
+    "thrusters": {
+      "horizontal_left": {
+        "rpm": {
+          "valid": true,
+          "mean": 608.5912723256096,
+          "min": -1039.6288831331851,
+          "max": 1145.4904343483677,
+          "change": -1858.0761313442154,
+          "unit": "rpm"
+        },
+        "command": {
+          "valid": true,
+          "mean": 0.10799999999999998,
+          "min": -0.3,
+          "max": 0.3,
+          "change": -0.6,
+          "unit": "normalized"
+        },
+        "thrust_n": {
+          "valid": true,
+          "mean": 3.0851247719081254,
+          "min": -4.74104306847974,
+          "max": 5.755726659471223,
+          "change": -7.679359832935276,
+          "unit": "N"
+        },
+        "torque_nm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N m"
+        },
+        "command_steady_rpm": {
+          "valid": true,
+          "mean": 412.5296124941927,
+          "min": -1145.9155902616465,
+          "max": 1145.9155902616465,
+          "change": -2291.831180523293,
+          "unit": "rpm"
+        }
+      },
+      "horizontal_right": {
+        "rpm": {
+          "valid": true,
+          "mean": 608.5912723256096,
+          "min": -1039.6288831331851,
+          "max": 1145.4904343483677,
+          "change": -1858.0761313442154,
+          "unit": "rpm"
+        },
+        "command": {
+          "valid": true,
+          "mean": 0.10799999999999998,
+          "min": -0.3,
+          "max": 0.3,
+          "change": -0.6,
+          "unit": "normalized"
+        },
+        "thrust_n": {
+          "valid": true,
+          "mean": 3.0851247719081254,
+          "min": -4.74104306847974,
+          "max": 5.755726659471223,
+          "change": -7.679359832935276,
+          "unit": "N"
+        },
+        "torque_nm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N m"
+        },
+        "command_steady_rpm": {
+          "valid": true,
+          "mean": 412.5296124941927,
+          "min": -1145.9155902616465,
+          "max": 1145.9155902616465,
+          "change": -2291.831180523293,
+          "unit": "rpm"
+        }
+      },
+      "vertical_front": {
+        "rpm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "rpm"
+        },
+        "command": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "normalized"
+        },
+        "thrust_n": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N"
+        },
+        "torque_nm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N m"
+        },
+        "command_steady_rpm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "rpm"
+        }
+      },
+      "vertical_rear": {
+        "rpm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "rpm"
+        },
+        "command": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "normalized"
+        },
+        "thrust_n": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N"
+        },
+        "torque_nm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "N m"
+        },
+        "command_steady_rpm": {
+          "valid": true,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "change": 0.0,
+          "unit": "rpm"
+        }
+      }
+    },
+    "orientation_last_xyzw": [
+      0.7071067811039283,
+      0.7071067812691668,
+      -9.285407017619652e-11,
+      9.285406767887907e-11
+    ],
+    "orientation_change_rad": 0.0,
+    "navigation_displacement_m": 0.29098644146439073,
+    "dvl_speed_m_s": {
+      "valid": true,
+      "mean": 0.05997450693387665,
+      "min": 0.003623046956927567,
+      "max": 0.09730339429814887,
+      "change": 0.06182412593013087,
+      "unit": "m/s"
+    },
+    "position_prediction_residual_m": {
+      "valid": false,
+      "reason": "no_valid_measurements",
+      "mean": null,
+      "min": null,
+      "max": null,
+      "change": null,
+      "unit": "m"
+    },
+    "communication": {},
+    "autopilot": {
+      "sample_count": 50,
+      "fresh_sample_count": 50,
+      "heartbeat_seen": true,
+      "armed_seen": true,
+      "message_types": [
+        "ATTITUDE",
+        "HEARTBEAT",
+        "SCALED_PRESSURE",
+        "SCALED_PRESSURE2",
+        "SERVO_OUTPUT_RAW"
+      ],
+      "rpm_source": "stonefish_thruster_state",
+      "command_source": "ardusub_sitl_json_servo_packet"
+    }
+  },
+  "observations": [
+    {
+      "feature": "depth_m",
+      "value": 5.0,
+      "unit": "m",
+      "description": "Средняя глубина за окно."
+    }
+  ],
+  "summary": "Обработано 50 записей. Средняя глубина 5.00 м. Обязательные источники доступны.",
+  "limitations": [
+    "Диагноз формирует отдельный диагностический агент.",
+    "Прогноз движения отсутствует, если нет независимого эталона.",
+    "Расчётные установившиеся RPM относятся к модели 400 рад/с. Переходные процессы оцениваются отдельно."
+  ]
+}

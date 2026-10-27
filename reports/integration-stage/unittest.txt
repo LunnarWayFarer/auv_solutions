@@ -1,0 +1,26 @@
+test_conversion_and_identity (test_core.DataFormatTests.test_conversion_and_identity) ... ok
+test_count_limits (test_core.DataFormatTests.test_count_limits) ... ok
+test_invalid_inputs (test_core.DataFormatTests.test_invalid_inputs) ... ok
+test_local_pipeline_persists_every_message (test_core.DataFormatTests.test_local_pipeline_persists_every_message) ... ok
+test_malformed_json_and_duplicate_keys (test_core.DataFormatTests.test_malformed_json_and_duplicate_keys) ... ok
+test_missing_and_ground_truth_fields_rejected (test_core.DataFormatTests.test_missing_and_ground_truth_fields_rejected) ... ok
+test_normalized_format_rejects_wrong_source_and_values (test_core.DataFormatTests.test_normalized_format_rejects_wrong_source_and_values) ... ok
+test_stub_cannot_claim_real_diagnosis_or_sources (test_core.DataFormatTests.test_stub_cannot_claim_real_diagnosis_or_sources) ... ok
+test_labels_and_invalid_time_rejected (test_monitoring_network.MonitoringTests.test_labels_and_invalid_time_rejected) ... ok
+test_missing_measurements_and_no_fabricated_forecast (test_monitoring_network.MonitoringTests.test_missing_measurements_and_no_fabricated_forecast) ... ok
+test_partial_dvl_is_not_a_zero_speed (test_monitoring_network.MonitoringTests.test_partial_dvl_is_not_a_zero_speed) ... ok
+test_repeatable_numeric_summary (test_monitoring_network.MonitoringTests.test_repeatable_numeric_summary) ... ok
+test_signed_rpm_and_command_scaling (test_monitoring_network.MonitoringTests.test_signed_rpm_and_command_scaling) ... ok
+test_stale_measurement (test_monitoring_network.MonitoringTests.test_stale_measurement) ... ok
+test_world_transform_and_identity_orientation (test_monitoring_network.MonitoringTests.test_world_transform_and_identity_orientation) ... ok
+test_delay_and_loss_measured_at_receiver (test_monitoring_network.NetworkTests.test_delay_and_loss_measured_at_receiver) ... ok
+test_duplicates_do_not_restore_or_inflate_count (test_monitoring_network.NetworkTests.test_duplicates_do_not_restore_or_inflate_count) ... ok
+test_link_outage_and_separate_evaluation (test_monitoring_network.NetworkTests.test_link_outage_and_separate_evaluation) ... ok
+test_node_outage_and_recovery (test_monitoring_network.NetworkTests.test_node_outage_and_recovery) ... ok
+test_seed_reproduces_drops_and_jitter (test_monitoring_network.NetworkTests.test_seed_reproduces_drops_and_jitter) ... ok
+test_two_nodes_are_independent (test_monitoring_network.NetworkTests.test_two_nodes_are_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.010s
+
+OK

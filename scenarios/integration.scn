@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scenario>
+  <environment>
+    <ned latitude="59.0" longitude="30.0" />
+    <ocean>
+      <water density="1031.0" jerlov="0.2" />
+      <waves height="0.0" />
+    </ocean>
+  </environment>
+  <materials>
+    <material name="hull" density="1031" restitution="0.1" />
+    <friction_table>
+      <friction material1="hull" material2="hull" static="0.5" dynamic="0.3" />
+    </friction_table>
+  </materials>
+  <looks>
+    <look name="blue" gray="0.5" roughness="0.5" />
+  </looks>
+  <static name="bottom" type="box">
+    <dimensions xyz="100 100 1" />
+    <material name="hull" />
+    <look name="blue" />
+    <world_transform xyz="0 0 20.5" rpy="0 0 0" />
+  </static>
+  <robot name="auv_01" fixed="false" self_collisions="false">
+    <base_link name="body" type="box" physics="submerged">
+      <dimensions xyz="0.8 0.4 0.3" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <material name="hull" />
+      <look name="blue" />
+    </base_link>
+    <sensor name="pressure" type="pressure" rate="10">
+      <range pressure="1000000" />
+      <history samples="1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <link name="body" />
+      <ros_publisher topic="/auv_01/pressure" />
+    </sensor>
+    <sensor name="imu" type="imu" rate="50">
+      <noise angle="0 0 0" angular_velocity="0" linear_acceleration="0" yaw_drift="0" />
+      <history samples="1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <link name="body" />
+      <ros_publisher topic="/auv_01/imu" />
+    </sensor>
+    <sensor name="dvl" type="dvl" rate="10">
+      <specs beam_angle="30" beam_positive_z="true" />
+      <range velocity="10 10 10" altitude_min="0.5" altitude_max="50" />
+      <history samples="1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <link name="body" />
+      <ros_publisher topic="/auv_01/dvl" />
+    </sensor>
+    <sensor name="navigation" type="odometry" rate="10">
+      <noise position="0.01" velocity="0.005" angle="0" angular_velocity="0" />
+      <history samples="1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <link name="body" />
+      <ros_publisher topic="/auv_01/navigation" />
+    </sensor>
+    <sensor name="truth" type="odometry" rate="10">
+      <history samples="1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <link name="body" />
+      <ros_publisher topic="/evaluation/auv_01/ground_truth" />
+    </sensor>
+    <actuator name="horizontal_left" type="thruster">
+      <specs max_setpoint="400" inverted_setpoint="false" normalized_setpoint="true" />
+      <propeller diameter="0.12" right="true">
+        <mesh filename="propeller.obj" scale="1.0" />
+        <material name="hull" />
+        <look name="blue" />
+      </propeller>
+      <rotor_dynamics type="first_order">
+        <time_constant value="0.5" />
+      </rotor_dynamics>
+      <thrust_model type="quadratic">
+        <thrust_coeff value="0.0004" />
+      </thrust_model>
+      <origin xyz="0 -0.22 0" rpy="0 0 0" />
+      <link name="body" />
+    </actuator>
+    <actuator name="horizontal_right" type="thruster">
+      <specs max_setpoint="400" inverted_setpoint="false" normalized_setpoint="true" />
+      <propeller diameter="0.12" right="true">
+        <mesh filename="propeller.obj" scale="1.0" />
+        <material name="hull" />
+        <look name="blue" />
+      </propeller>
+      <rotor_dynamics type="first_order">
+        <time_constant value="0.5" />
+      </rotor_dynamics>
+      <thrust_model type="quadratic">
+        <thrust_coeff value="0.0004" />
+      </thrust_model>
+      <origin xyz="0 0.22 0" rpy="0 0 0" />
+      <link name="body" />
+    </actuator>
+    <actuator name="vertical_front" type="thruster">
+      <specs max_setpoint="400" inverted_setpoint="false" normalized_setpoint="true" />
+      <propeller diameter="0.12" right="true">
+        <mesh filename="propeller.obj" scale="1.0" />
+        <material name="hull" />
+        <look name="blue" />
+      </propeller>
+      <rotor_dynamics type="first_order">
+        <time_constant value="0.5" />
+      </rotor_dynamics>
+      <thrust_model type="quadratic">
+        <thrust_coeff value="0.0004" />
+      </thrust_model>
+      <origin xyz="0.25 0 0" rpy="0 -1.5707963267948966 0" />
+      <link name="body" />
+    </actuator>
+    <actuator name="vertical_rear" type="thruster">
+      <specs max_setpoint="400" inverted_setpoint="false" normalized_setpoint="true" />
+      <propeller diameter="0.12" right="true">
+        <mesh filename="propeller.obj" scale="1.0" />
+        <material name="hull" />
+        <look name="blue" />
+      </propeller>
+      <rotor_dynamics type="first_order">
+        <time_constant value="0.5" />
+      </rotor_dynamics>
+      <thrust_model type="quadratic">
+        <thrust_coeff value="0.0004" />
+      </thrust_model>
+      <origin xyz="-0.25 0 0" rpy="0 -1.5707963267948966 0" />
+      <link name="body" />
+    </actuator>
+    <ros_subscriber thrusters="/auv_01/thruster_command" />
+    <ros_publisher thrusters="/auv_01/thruster_state" />
+    <world_transform xyz="0 0 5" rpy="0 0 0" />
+  </robot>
+</scenario>

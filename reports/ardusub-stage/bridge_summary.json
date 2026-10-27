@@ -1,0 +1,9 @@
+{
+  "servo_packets": 2320,
+  "physics_replies": 2699,
+  "invalid_packets": 0,
+  "duplicate_or_old_packets": 0,
+  "sensor_timeouts": 1,
+  "last_physics_time_s": 29.140000000001756,
+  "last_servo_frame": 2319
+}

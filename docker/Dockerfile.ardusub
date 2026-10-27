@@ -1,0 +1,25 @@
+FROM auv-stonefish AS dependencies
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN apt-get update -o APT::Update::Error-Mode=any \
+    && apt-get install -y --no-install-recommends python3-pip python3-dev pkg-config \
+       libtool autoconf automake gawk rsync \
+    && rm -rf /var/lib/apt/lists/* \
+    && python3 -m pip install --no-cache-dir empy==3.3.4 pexpect==4.9.0 \
+       future==1.0.0 lxml==5.3.1 pymavlink==2.4.49
+FROM dependencies
+ARG ARDUSUB_REV=fb773567896014da007bca58358704d4a0d8516f
+COPY --from=ardupilot_source / /opt/ardupilot/
+RUN test "$(git -C /opt/ardupilot rev-parse HEAD)" = "$ARDUSUB_REV"
+COPY docker/patch_ardusub_mixer.py /opt/patch_ardusub_mixer.py
+RUN python3 /opt/patch_ardusub_mixer.py /opt/ardupilot \
+    && cd /opt/ardupilot \
+    && ./waf configure --board sitl --disable-scripting --no-submodule-update \
+    && ./waf sub -j2
+COPY docker/patch_stonefish_clock.py /opt/patch_stonefish_clock.py
+RUN python3 /opt/patch_stonefish_clock.py /workspace/ros2_ws/src/stonefish_ros2 \
+    && source /opt/ros/humble/setup.bash \
+    && cd /workspace/ros2_ws \
+    && colcon build --packages-select stonefish_ros2 --cmake-args -DBUILD_TESTING=OFF
+COPY ros2_ws/src/auv_diagnostics /workspace/ros2_ws/src/auv_diagnostics
+RUN source /opt/ros/humble/setup.bash \
+    && cd /workspace/ros2_ws && colcon build --packages-select auv_diagnostics

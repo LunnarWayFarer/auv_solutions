@@ -1,0 +1,33 @@
+{
+  "run_id": "integration-84b3608ccb0a",
+  "checks": {
+    "sources": true,
+    "frames": true,
+    "forward_rpm": true,
+    "reverse_rpm": true,
+    "movement": true,
+    "dvl_bottom_available": true,
+    "normalized_commands": true,
+    "network_normal_delivery": true,
+    "network_delay": true,
+    "network_packet_loss": true,
+    "network_outage_recovery": true,
+    "monitoring_windows": true
+  },
+  "source_counts": {
+    "thruster_state": 2511,
+    "imu": 1256,
+    "pressure": 251,
+    "dvl": 251,
+    "navigation": 251,
+    "truth": 251
+  },
+  "clock_domain": "ros_wall",
+  "clock_origin_ros_s": 1792956641.8702419,
+  "diagnostic_agent_connected": false,
+  "notes": [
+    "Окна измерены по часам ROS, а не по времени физического решателя.",
+    "Навигация получена из отдельной одометрии с заданным шумом.",
+    "Сетевые нарушения воспроизведены программно на записанной телеметрии."
+  ]
+}
