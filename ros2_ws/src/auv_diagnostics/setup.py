@@ -16,7 +16,7 @@ setup(
     zip_safe=True,
     maintainer="AUV project team",
     maintainer_email="maintainers@example.invalid",
-    description="Synthetic telemetry integration scaffold; no real diagnostic model yet.",
+    description="ROS2 telemetry monitoring and simulation checks for underwater vehicles.",
     license="Proprietary",
     entry_points={"console_scripts": [
         "synthetic_source = auv_diagnostics.nodes:source_main",
@@ -24,5 +24,6 @@ setup(
         "diagnostic_stub = auv_diagnostics.nodes:stub_main",
         "report_recorder = auv_diagnostics.nodes:recorder_main",
         "auv_demo = auv_diagnostics.demo:main",
+        "auv_monitor = auv_diagnostics.monitoring:main",
     ]},
 )

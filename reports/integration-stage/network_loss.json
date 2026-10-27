@@ -1,0 +1,8 @@
+{
+  "sent_count": 251,
+  "received_unique_count": 202,
+  "loss_pct": 19.52191235059761,
+  "latency_mean_ms": 100.0000000000004,
+  "latency_max_ms": 100.00000000000142,
+  "observed_events": []
+}

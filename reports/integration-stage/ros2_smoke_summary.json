@@ -1,0 +1,8 @@
+{
+  "run_id": "ros2-482143e4165f",
+  "reports": 20,
+  "transport": "ROS2",
+  "agent": "fixed-stub/0.1",
+  "launch_returncode": 0,
+  "diagnostic_accuracy": null
+}

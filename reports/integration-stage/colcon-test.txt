@@ -1,0 +1,7 @@
+Starting >>> auv_diagnostics
+Finished <<< auv_diagnostics [0.25s]
+
+Summary: 1 package finished [0.36s]
+build/auv_diagnostics/pytest.xml: 21 tests, 0 errors, 0 failures, 0 skipped
+
+Summary: 21 tests, 0 errors, 0 failures, 0 skipped

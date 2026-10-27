@@ -1,0 +1,22 @@
+[INFO] Welcome to Stonefish 1.6.
+[INFO] Initializing simulation:
+[INFO] Building scenario...
+[INFO] Scenario parser: Loading scenario from '/host/scenarios/integration.scn'.
+[INFO] Material hull (0) created.
+[INFO] Built multibody link auv_01/body (mass[kg]: 98.976; inertia[kgm2]: 2.062, 6.021, 6.598; volume[cm3]: 96000.0)
+[INFO] Building kinematic tree of robot 'auv_01', consisting of 1 links and 0 joints.
+[INFO] Loading geometry from: /host/scenarios//propeller.obj
+[INFO] Loaded mesh with 4 faces in 0 ms.
+[INFO] Loading geometry from: /host/scenarios//propeller.obj
+[INFO] Loaded mesh with 4 faces in 0 ms.
+[INFO] Loading geometry from: /host/scenarios//propeller.obj
+[INFO] Loaded mesh with 4 faces in 0 ms.
+[INFO] Loading geometry from: /host/scenarios//propeller.obj
+[INFO] Loaded mesh with 4 faces in 0 ms.
+[INFO] Scenario parser: Log saved to file '/root/.ros/log/stonefish_ros2_parser.log'.
+[INFO] Synchronizing motion states...
+[INFO] Simulation initialized -> using Bullet Physics 3.26.
+[INFO] Ready for running...
+[INFO] Multithreading physics using 11 threads.
+[INFO] IC problem solved with 1 iterations in 0.000079 s.
+[ros2run]: Interrupt

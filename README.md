@@ -1,8 +1,10 @@
 # Обработка телеметрии АНПА в ROS2
 
-Начальная программная часть проекта 2600 «LLM-решения для диагностики аномалий и рекомендаций в динамических подводных сетях АНПА на основе анализа логов».
+Программная часть проекта 2600 «LLM-решения для диагностики аномалий и рекомендаций в динамических подводных сетях АНПА на основе анализа логов».
 
-Код проверяет получение, преобразование и сохранение синтетической телеметрии. Пакет ROS2 содержит четыре узла:
+В проекте есть получение телеметрии Stonefish, первый агент мониторинга с файлами JSON и программное воспроизведение нарушений доставки. Команды проверки и поля сообщений описаны в [docs/stonefish-integration.md](docs/stonefish-integration.md).
+
+Сохранена начальная демонстрация на синтетических данных. Она содержит четыре узла:
 
 ```text
 synthetic_source -> telemetry_adapter -> diagnostic_stub -> report_recorder
@@ -10,7 +12,9 @@ synthetic_source -> telemetry_adapter -> diagnostic_stub -> report_recorder
 
 Источник публикует тестовые показания. Адаптер проверяет поля и преобразует единицы измерения. Узел `diagnostic_stub` возвращает явно помеченный тестовый ответ. Последний узел записывает отчёты в JSONL.
 
-LLM, RAG и распознавание неисправностей пока не подключены. Значения `status=stub`, `anomaly_type=unknown` и `diagnostic_accuracy=null` обозначают тестовый режим. Успешная передача сообщений не является оценкой точности диагностики.
+Stonefish и ArduSub SITL соединены двусторонним мостом: автопилот получает состояние симуляции и возвращает PWM движителей. Сводки первого агента публикуются в ROS2 раз в пять секунд. Сборка и совместная проверка описаны в [docs/ardusub-integration.md](docs/ardusub-integration.md).
+
+Диагностическая LLM и RAG пока не подключены. Первый агент уже формирует сводки по показаниям Stonefish, но класс неисправности ещё не определяет. Значения `status=stub`, `anomaly_type=unknown` и `diagnostic_accuracy=null` обозначают тестовый режим. Успешная передача сообщений не является оценкой точности диагностики.
 
 ## Локальный запуск
 
@@ -50,7 +54,7 @@ ros2 launch auv_diagnostics week1.launch.py --show-args
 PYTHONPATH=ros2_ws/src/auv_diagnostics python3 -m unittest discover -s ros2_ws/src/auv_diagnostics/test -v
 ```
 
-Ожидается `Ran 8 tests` и `OK`. Тесты проверяют преобразование единиц, состав и значения полей, некорректный JSON и сохранение сообщений.
+Ожидается `Ran 26 tests` и `OK`. Тесты проверяют преобразование единиц, состав и значения полей, некорректный JSON и сохранение сообщений.
 
 Проверка Python-кода:
 
@@ -66,11 +70,13 @@ python3 -m venv .venv
 docker run --rm auv-week1 bash -c 'cd /workspace/ros2_ws && colcon test --return-code-on-test-failure && colcon test-result --all --verbose'
 ```
 
-Ожидается восемь тестов без ошибок, падений и пропусков.
+После пересборки образа ожидается 26 тестов без ошибок, падений и пропусков.
 
 ## Stonefish
 
-Отдельный сценарий получает показания давления в ROS2 от неподвижного объекта на глубине 5 м. Это проверка датчика и передачи данных. Модель движущегося АНПА и подключение показаний к диагностическому пакету пока отсутствуют.
+Сцена `scenarios/integration.scn` содержит движущийся аппарат, четыре полноценных движителя, давление, IMU, DVL, навигационную оценку с шумом и отдельную истинную одометрию. Проверочный скрипт записывает окна телеметрии и сводки первого агента, проверяет прямое вращение и реверс, а затем воспроизводит сетевые нарушения на записанных данных.
+
+Запуск: [docs/stonefish-integration.md](docs/stonefish-integration.md). Проверка одного неподвижного датчика давления сохранена как отдельная начальная проверка.
 
 Команды сборки и запуска: [docs/stonefish.md](docs/stonefish.md).
 
@@ -78,7 +84,15 @@ docker run --rm auv-week1 bash -c 'cd /workspace/ros2_ws && colcon test --return
 
 - `ros2_ws/src/auv_diagnostics/`: пакет ROS2, обработка данных, узлы, общий launch-файл и тесты.
 - `scripts/check_ros_demo.py`: проверка передачи сообщений через четыре ROS2-узла.
-- `scripts/check_stonefish.py`: отдельная проверка датчика Stonefish.
+- `scripts/check_stonefish.py`: отдельная проверка датчика давления.
+- `scripts/check_ardusub_integration.py`: совместная проверка Stonefish, ArduSub, MAVLink и первого агента.
+- `scripts/ardusub_bridge.py`: обмен состоянием и PWM с автопилотом.
+- `scripts/ardusub_mavlink.py`: телеметрия автопилота в ROS2.
+- `scripts/check_stonefish_integration.py`: получение датчиков, RPM и траектории, запись окон JSON и сетевые проверки.
+- `auv_diagnostics/monitoring.py`: обработка JSON первым агентом.
+- `auv_diagnostics/network.py`: воспроизведение доставки и контроль доступности узлов.
+- `reports/integration-stage/`: результаты проверки датчиков, JSON и нарушений доставки.
+- `reports/ardusub-stage/`: результаты совместного запуска Stonefish и ArduSub.
 - `docker/`: Dockerfile и запуск контейнеров.
 - `scenarios/pressure_probe.scn`: сцена для датчика давления.
 - `.github/workflows/ci.yml`: проверки Python и ROS2 для GitHub Actions.
